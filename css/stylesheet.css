@@ -1,0 +1,235 @@
+/*Stylesheet for "Thrifting in NYC" website. Individual Project for Tech Connect at NYPL.*/
+
+/*Apologies for the long-winded comments in my html and css documents.*/
+
+/*My color palette is from http://www.colorhunt.co 
+#ecf0f1 for the body background-color, a:hover, font-color of "Send" button on Contact page
+#33cccc for the background-color of the main navigation
+#2980b9 for h4, the background-color of the secondary navigation buttons on the "Stores" page, background-color of "Send" button on the Contact page, background-color of "Back to Top" button, links, and a:visited
+#2c3e50 for the body font-color and html background-color
+#000000 (black) for the font-color of the buttons on the "Stores" page and border of "Back to Top" button
+*/
+
+
+/*I added a background color to the <html> element so my margins will have a different color than the body. Doing this affected the margin color on the top and bottom of the webpage. To make the <body> abut the top and bottom of the webpage, I added padding-top to .head div and padding-bottom to .footer div.*/
+html {
+	background-color: #2c3e50;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+	width: 80%;
+	margin: auto;
+	background-color: #ecf0f1;
+	color: #2c3e50;
+}
+
+a, a:visited {
+	color: #2980b9;
+}
+
+/*I decided to play with the <a> tag. I experimented with color when a cursor hovers over a link.*/
+.nav a:hover {
+	background-color: #ecf0f1;
+}
+
+.storenav a:hover {
+	color: #ecf0f1;
+}
+
+/*I use h4 as a heading for different sections within the body. I wanted space between the last paragraph of a section and the heading of a new section, so I added margin-top to h4.
+On my Contact page, I wanted some space between <h1> and <form> because I want all my pages to be uniform in their layout. I decided to add <form> to the code I wrote for <h4>. I like how this changes the font color and font-size of the form, too.*/
+h4, form {
+	color: #2980b9;
+	font-size: 18px;
+	margin-top: 60px;
+}
+
+.head {
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+.head div {
+	padding-top: 5px;
+}
+
+/*Originally, I used h1 and h2 for the header of the website and I made their font-size bigger. Cloud9 suggested these should not have a defined font-size and I should use the default setting. Since I wanted the font-size of the header to be larger than what h1 and h2 offered, I changed those to <p> in the HTML and used first-child and nth-child in the CSS. This worked the same. I kept the first-child and nth-child selectors because I wanted to show a better understanding of CSS. 
+Also, I declared the font color in each .head p because I won't get the right result I want if I declare it in .head div.
+*/
+.head p:first-child {
+	color: #2c3e50;
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.head p:nth-child(2) {
+	color: #2c3e50;
+	font-style: italic;
+	font-size: 30px;
+}
+
+.nav {
+	background-color: #33cccc;
+	text-align: center;
+	font-size: 18px;
+}
+
+/*I had red "test" borders around my divs when I started coding the website. When I removed the red border, a funny thing happened: The height of my navigation became smaller. When I inspected the .nav div and the <p> element, I saw there was top and bottom margin space of 18px for the div. For some reason, the margin space of the div filled with background color only when I had the border around the div. If I declared a height for my div, then the text would abut with the top of the div and I would have to add padding  space to center it vertically. For my solution, I decided for the "".nav p" to make the margin 0px and replace that with top and bottom padding. The padding will fill with background color. Now, my navigation height will appear the same with or without the red div border. I did this to the <p> element rather than the <a> element since my "a" element has a different background color on the hover and I don't want to increase the active link space.*/
+.nav p {
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin: 0px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #2c3e50;
+	text-transform: uppercase;
+	margin-left: 40px;
+	margin-right: 40px;
+	background-color: #33cccc;
+}
+
+/*I didn't want my website's content to abut the margins of the "body", so I added some padding.*/
+.text {
+	padding: 30px 20px 100px;
+}
+
+/*Most images will use the same CSS code (under class .img). For certain images, I decided to give them their own class so I could do something different with their layout or size.*/
+.img img {
+	height: 200px;
+}
+
+/*".recycle" is on the About page.*/
+.img, .recycle {
+	float: right;
+	font-size: 12px;
+}
+
+/*".thrift" is on Home page.*/
+.thrift {
+	text-align: center;
+	font-size: 12px;
+}
+
+.thrift img {
+	width: 50%;
+}
+
+.recycle img {
+	height: 300px;
+}
+
+/*I added a secondary navigation to my "Stores" page since it's so long. Clicking a button will jump to that section.*/
+.storenav {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/*"Fieldset a" is the "Send" button of the contact form on the Contact page.*/
+.storenav a, fieldset a {
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 10px 20px;
+	padding: 5px;
+	background-color: #2980b9;
+	border-radius: 20px;
+}
+
+#send {
+	padding: 10px 40px;
+	margin-left: 0;
+	text-align: center;
+	color: #ecf0f1;
+}
+
+/*I also decided to add a "Back to Top" button. I found a free-to-use, attribution not required PNG image. In the HTML, I left a comment about the source. Also, I wrote code for an alternate button that employs unicode. I left that code in this CSS as a comment further below.*/
+.back {
+	background-color: #2980b9;
+	height: 75px;
+	width: 75px;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	border-radius: 50%;
+	border: 3px solid #000000;
+}
+
+.back img {
+	height: 50px;
+	margin-left: 12px;
+	margin-top: -2px;
+}
+
+/*This is CSS for an alternate "Back to Top" arrow that uses unicode. Unicode &#9650;
+.back a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 50px;
+}
+
+.back p {
+	margin-top: -7px;
+	color: #000000;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+}*/
+
+/*Unordered list for Tips page.*/
+ul {
+	padding-left: 0px;
+}
+
+li {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+/*Form for Contact page.*/
+fieldset {
+	padding-left: 40px;
+}
+
+input {
+	height: 20px;
+	width: 70%;
+}
+
+textarea{
+	height: 200px;
+	width: 70%;
+}
+
+/*"Send" button for Contact page. While the Send button uses CSS that is similar to the buttons created with the .storenav CSS, the Send button is not written with similar HTML. The Send button has the <a> tag as the parent of <p>. The .storenav buttons have one <p> as the parent of three <a> tags. Since I wanted the entire Send button to be clickable and not just the text, <a> had to be the parent of <p>. Hence the need for separate CSS.
+.send {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.send p {
+	background-color: #2980b9;
+	padding: 10px;
+	border-radius: 20px;
+	width: 100px;
+	text-align: center;
+	color: #ecf0f1;
+	display: inline-block;
+}*/
+
+.footer {
+	font-size: 14px;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+/*This id is for the footer on the "Tips" page. I wanted a little more space between the footer and an image on that page. I added margin-top to the footer on this page.*/
+#spaceabove {
+	padding-top: 30px;
+}
+
+

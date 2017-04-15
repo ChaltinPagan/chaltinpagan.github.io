@@ -1,0 +1,78 @@
+<!--Apologies for the long-winded comments in my html and css documents.-->
+<!Doctype html>
+<html>
+	<head>
+		<title>Home - Thrifting in NYC</title>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+	</head>
+	
+	<body>
+		<!--Beginning of header-->
+		<a href="index.html" class="head" id="top">
+		<div>
+			<p>Thrifting in NYC</p>
+			<p>For Beginners</p>
+		</div>
+		</a>
+		<!--End of header.-->
+
+		<!--Beginning of navigation.-->
+		<div class="nav">
+			<p>
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="stores.html">Stores</a>
+				<a href="tips.html">Tips</a>
+				<a href="resources.html">Resources</a>
+				<a href="contact.html">Contact</a>
+			</p>
+		</div>
+		<!--End of navigation-->
+		<!--I decided to use the <p> tag to make my navigation. I didn't like making an unordered list and setting text-decoration to none. Though the bullet was not visible, it still occupied space. When I use <p>, it looks more responsive. For example, if I make my window smaller, the links in my navigation don't overlap and hide each other or conceal the rest of the page content. Because of this, I don't want to make my navigation fixed at the top of the screen. A fixed navigation will overlap page content and it will require margin-top added to the content to compensate for this. With <p>, it looks like I don't have to change padding or margin. To make up for a lack of a fixed navigation, I decided to make a "Back to Top" arrow button.-->
+
+
+		<!--"Back to Top" button. This is fixed to lower right corner of screen.-->
+		<a href="#top">
+		<div class="back">
+			<p><img src="images/uparrow.png"></p>
+		</div>
+		</a>
+		<!--End of "Back to Top" button.-->
+		<!--PNG image from Pixabay, https://pixabay.com/en/app-application-arrow-back-button-1646212/ -->
+		<!--Unicode alternate is "&#9650;". Code for unicode arrow is available in CSS as a comment.-->
+
+
+		<!--Beginning of .text div.-->
+		<div class="text">
+			<h1>Home</h1>
+			<p>Welcome to <em>Thrifting in NYC: For Beginners</em>!</p>
+			<p>I am introducing you to the wonderful world of thrift stores. It's very easy to find hidden gems in there, but you need to know where to look for them. <strong>Presently, this website will focus on clothes and non-profit stores in NYC</strong>.</p>
+			<p>I provide a brief summary of thrifting resources. I encorage you to visit the stores and their websites for their current policies.</p>
+
+			<!--Beginning of thrift store image. Centered in page. I assigned this image its own classs because this will be the only center-aligned image and all other website images will float to the right of text.-->
+			<div class="thrift">
+				<figure>
+				<img src="images/thrift.jpg">
+					<figcaption>
+					<a href="https://www.flickr.com/photos/mikefats/2266575528" target="_blank" >Photo: Flickr</a>
+					</figcaption>
+				</figure>
+			</div>
+			<!--End of #thrift image.-->
+			<!--I decided to use <figure> and <figcaption> tags for my images. I discovered these tags through W3 Schools. I put those tags within a div because I like the margin space that a div adds. This is useful for images that have text wrapping around them. Without the div, I would have to add margin or padding to the image. Also, I like <figcaption> because it doesn't leave a space between image and caption like a <p> tag would. -->
+
+			<!--Continuation of page text.-->
+			<p><em>Thrifting in NYC: For Beginners</em> was created to fulfill the requirements of <em>Project_&#60;code&#62;</em> Phase I, a Tech Connect program at the New York Public Library, NYC. This is an open source website, which means the public (you!) can be free to edit its content.</p>
+
+		</div>
+		<!--End of .text div.-->
+			
+		
+		<div class="footer">
+			<p>Copyright 2017. Coded by Chaltin Pagan. </br>Created to fulfill the requirements of <em>Project_&#60;code&#62;</em> Phase I, a Tech Connect program at the New York Public Library, NYC.</p>
+		</div>
+
+	</body>
+</html>
+
