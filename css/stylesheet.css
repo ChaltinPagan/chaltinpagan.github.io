@@ -199,7 +199,7 @@ textarea{
 	width: 70%;
 }
 
-/*"Send" button for Contact page. While the Send button uses CSS that is similar to the buttons created with the .storenav CSS, I felt is was best to create separate CSS for the Send button. I wanted the "Send" button to look a little different from the .storenav buttons. I thought separate CSS would be less confusing for the web browser.*/
+/*"Send" button for Contact page. While the Send button uses CSS that is similar to the buttons created with the .storenav CSS, I felt was best to create separate CSS for the "Send" button. I wanted the "Send" button to look a little different from the .storenav buttons. I thought separate CSS would be less confusing for the web browser.*/
 .send a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -218,7 +218,7 @@ textarea{
 	padding-bottom: 5px;
 }
 
-/*This id is for the footer on the "Tips" page. On that page, there is an image that sits close to the footer. I wanted a little more space between the footer and the image, so I added margin-top to the footer on this page.*/
+/*This id is for the footer on the "Tips" page. On that page, there is an image that sits close to the footer. I wanted a little more space between the footer and the image, so I added padding-top to the footer on this page.*/
 #spaceabove {
 	padding-top: 100px;
 }
