@@ -37,8 +37,8 @@ a, a:visited {
 	color: #ecf0f1;
 }
 
-/*I use h4 as a heading for different sections within the body. I wanted space between the last paragraph of a section and the heading of a new section, so I added margin-top to h4.
-On my Contact page, I wanted some space between <h1> and <form> because I want all my pages to be uniform in their layout. I decided to add <form> to the code I wrote for <h4>. I like how this changes the font color and font-size of the form, too.*/
+/*I use h4 as a heading for different sections within <body>. I wanted space between the last <p> of a section and <h4> of a new section, so I added margin-top to h4.
+On my Contact page, I wanted some space between <h1> and <form> since all my other pages have a space between <h1> and the following tag, which is usually <h4>. I want all my pages to be uniform in their layout. I decided to add <form> to the code I wrote for <h4>. I like how this changes the font color and font-size of the form, too.*/
 h4, form {
 	color: #2980b9;
 	font-size: 18px;
@@ -56,8 +56,7 @@ h4, form {
 }
 
 /*Originally, I used h1 and h2 for the header of the website and I made their font-size bigger. Cloud9 suggested these should not have a defined font-size and I should use the default setting. Since I wanted the font-size of the header to be larger than what h1 and h2 offered, I changed those to <p> in the HTML and used first-child and nth-child in the CSS. This worked the same. I kept the first-child and nth-child selectors because I wanted to show a better understanding of CSS. 
-Also, I declared the font color in each .head p because I won't get the right result I want if I declare it in .head div.
-*/
+Also, I declared the font color in each .head p because I won't get the right result I want if I declare it in .head div.*/
 .head p:first-child {
 	color: #2c3e50;
 	font-size: 50px;
@@ -71,13 +70,14 @@ Also, I declared the font color in each .head p because I won't get the right re
 	font-size: 30px;
 }
 
+/*This is the main navigation.*/
 .nav {
 	background-color: #33cccc;
 	text-align: center;
 	font-size: 18px;
 }
 
-/*I had red "test" borders around my divs when I started coding the website. When I removed the red border, a funny thing happened: The height of my navigation became smaller. When I inspected the .nav div and the <p> element, I saw there was top and bottom margin space of 18px for the div. For some reason, the margin space of the div filled with background color only when I had the border around the div. If I declared a height for my div, then the text would abut with the top of the div and I would have to add padding  space to center it vertically. For my solution, I decided for the "".nav p" to make the margin 0px and replace that with top and bottom padding. The padding will fill with background color. Now, my navigation height will appear the same with or without the red div border. I did this to the <p> element rather than the <a> element since my "a" element has a different background color on the hover and I don't want to increase the active link space.*/
+/*I had red "test" borders around my divs when I started coding the website. When I removed the red border, a funny thing happened: The height of my navigation became smaller. When I inspected the .nav div and the <p> element, I saw there was top and bottom margin space of 18px for the div. For some reason, the margin space of the div filled with background color only when I had the border around the div. If I declared a height for my div, then the text would abut with the top of the div and I would have to add padding or margin to center it vertically. For my solution, I decided for the ".nav p" to make the margin 0px and replace that with top and bottom padding. The padding will fill with background color. Now, my navigation height will appear the same with or without the red div border. I did this to the <p> element rather than the <a> element since my <a> element has a different background color on the hover and I don't want to increase the active link space.*/
 .nav p {
 	padding-top: 18px;
 	padding-bottom: 18px;
@@ -100,11 +100,11 @@ Also, I declared the font color in each .head p because I won't get the right re
 
 /*Most images will use the same CSS code (under class .img). For certain images, I decided to give them their own class so I could do something different with their layout or size.*/
 .img img {
-	height: 200px;
+	width: 400px;
 }
 
-/*".recycle" is on the About page.*/
-.img, .recycle {
+/*".tall" is on the Resources page.*/
+.img, .book {
 	float: right;
 	font-size: 12px;
 }
@@ -113,14 +113,16 @@ Also, I declared the font color in each .head p because I won't get the right re
 .thrift {
 	text-align: center;
 	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .thrift img {
-	width: 50%;
+	width: 40%;
 }
 
-.recycle img {
-	height: 300px;
+.book img {
+	height: 350px;
 }
 
 /*I added a secondary navigation to my "Stores" page since it's so long. Clicking a button will jump to that section.*/
@@ -129,22 +131,14 @@ Also, I declared the font color in each .head p because I won't get the right re
 	margin-bottom: 30px;
 }
 
-/*"Fieldset a" is the "Send" button of the contact form on the Contact page.*/
-.storenav a, fieldset a {
+.storenav a {
 	color: #000000;
 	text-decoration: none;
 	text-transform: uppercase;
-	margin: 10px 20px;
-	padding: 5px;
+	margin: 10px 30px;
+	padding: 7px;
 	background-color: #2980b9;
 	border-radius: 20px;
-}
-
-#send {
-	padding: 10px 40px;
-	margin-left: 0;
-	text-align: center;
-	color: #ecf0f1;
 }
 
 /*I also decided to add a "Back to Top" button. I found a free-to-use, attribution not required PNG image. In the HTML, I left a comment about the source. Also, I wrote code for an alternate button that employs unicode. I left that code in this CSS as a comment further below.*/
@@ -205,13 +199,10 @@ textarea{
 	width: 70%;
 }
 
-/*"Send" button for Contact page. While the Send button uses CSS that is similar to the buttons created with the .storenav CSS, the Send button is not written with similar HTML. The Send button has the <a> tag as the parent of <p>. The .storenav buttons have one <p> as the parent of three <a> tags. Since I wanted the entire Send button to be clickable and not just the text, <a> had to be the parent of <p>. Hence the need for separate CSS.
-.send {
+/*"Send" button for Contact page. While the Send button uses CSS that is similar to the buttons created with the .storenav CSS, I felt is was best to create separate CSS for the Send button. I wanted the "Send" button to look a little different from the .storenav buttons. I thought separate CSS would be less confusing for the web browser.*/
+.send a {
 	text-decoration: none;
 	text-transform: uppercase;
-}
-
-.send p {
 	background-color: #2980b9;
 	padding: 10px;
 	border-radius: 20px;
@@ -219,7 +210,7 @@ textarea{
 	text-align: center;
 	color: #ecf0f1;
 	display: inline-block;
-}*/
+}
 
 .footer {
 	font-size: 14px;
@@ -227,9 +218,9 @@ textarea{
 	padding-bottom: 5px;
 }
 
-/*This id is for the footer on the "Tips" page. I wanted a little more space between the footer and an image on that page. I added margin-top to the footer on this page.*/
+/*This id is for the footer on the "Tips" page. On that page, there is an image that sits close to the footer. I wanted a little more space between the footer and the image, so I added margin-top to the footer on this page.*/
 #spaceabove {
-	padding-top: 30px;
+	padding-top: 100px;
 }
 
 

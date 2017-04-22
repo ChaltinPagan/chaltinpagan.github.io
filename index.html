@@ -10,10 +10,10 @@
 	<body>
 		<!--Beginning of header-->
 		<a href="index.html" class="head" id="top">
-		<div>
-			<p>Thrifting in NYC</p>
-			<p>For Beginners</p>
-		</div>
+			<div>
+				<p>Thrifting in NYC</p>
+				<p>For Beginners</p>
+			</div>
 		</a>
 		<!--End of header.-->
 
@@ -29,14 +29,14 @@
 			</p>
 		</div>
 		<!--End of navigation-->
-		<!--I decided to use the <p> tag to make my navigation. I didn't like making an unordered list and setting text-decoration to none. Though the bullet was not visible, it still occupied space. When I use <p>, it looks more responsive. For example, if I make my window smaller, the links in my navigation don't overlap and hide each other or conceal the rest of the page content. Because of this, I don't want to make my navigation fixed at the top of the screen. A fixed navigation will overlap page content and it will require margin-top added to the content to compensate for this. With <p>, it looks like I don't have to change padding or margin. To make up for a lack of a fixed navigation, I decided to make a "Back to Top" arrow button.-->
+		<!--I decided to use the <p> tag to make my navigation. I didn't like making an unordered list and writing CSS code to remove the bullet. I didn't want to make my navigation fixed at the top of the screen because the this will cause the .nav items to overlap page content and it will require margin-top added to the .text div to compensate for this. To make up for a lack of a fixed navigation, I decided to make a "Back to Top" arrow button.-->
 
 
-		<!--"Back to Top" button. This is fixed to lower right corner of screen.-->
+		<!--"Back to Top" button. This is fixed to the lower right corner of screen.-->
 		<a href="#top">
-		<div class="back">
-			<p><img src="images/uparrow.png"></p>
-		</div>
+			<div class="back">
+				<p><img src="images/uparrow.png"></p>
+			</div>
 		</a>
 		<!--End of "Back to Top" button.-->
 		<!--PNG image from Pixabay, https://pixabay.com/en/app-application-arrow-back-button-1646212/ -->
@@ -47,20 +47,21 @@
 		<div class="text">
 			<h1>Home</h1>
 			<p>Welcome to <em>Thrifting in NYC: For Beginners</em>!</p>
-			<p>I am introducing you to the wonderful world of thrift stores. It's very easy to find hidden gems in there, but you need to know where to look for them. <strong>Presently, this website will focus on clothes and non-profit stores in NYC</strong>.</p>
+			<p>I am introducing you to the wonderful world of thrift stores. It's very easy to find hidden gems, but you need to know where to look for them. <strong>Presently, this website will focus on clothes and non-profit stores in NYC</strong>.</p>
 			<p>I provide a brief summary of thrifting resources. I encorage you to visit the stores and their websites for their current policies.</p>
 
-			<!--Beginning of thrift store image. Centered in page. I assigned this image its own classs because this will be the only center-aligned image and all other website images will float to the right of text.-->
+			<!--Beginning of thrift store image. Centered in its div. I assigned this image its own class because this will be the only center-aligned image and all other website images will float to the right of text.-->
 			<div class="thrift">
 				<figure>
-				<img src="images/thrift.jpg">
-					<figcaption>
-					<a href="https://www.flickr.com/photos/mikefats/2266575528" target="_blank" >Photo: Flickr</a>
-					</figcaption>
+					<img src="images/thrift.jpg">
+						<figcaption>
+							<a href="https://www.flickr.com/photos/mikefats/2266575528" target="_blank" >Photo: Flickr</a>
+						</figcaption>
 				</figure>
 			</div>
-			<!--End of #thrift image.-->
-			<!--I decided to use <figure> and <figcaption> tags for my images. I discovered these tags through W3 Schools. I put those tags within a div because I like the margin space that a div adds. This is useful for images that have text wrapping around them. Without the div, I would have to add margin or padding to the image. Also, I like <figcaption> because it doesn't leave a space between image and caption like a <p> tag would. -->
+			<!--End of .thrift image.-->
+			<!--I decided to use <figure> and <figcaption> tags for my images. I discovered these tags through W3 Schools. I put those tags within a div because I like the margin space that a div adds to <figure>. This is useful for images that have text wrapping around them. Without the div, I would have to add margin or padding to the image. Also, I like <figcaption> because it doesn't leave a space between image and caption like a <p> tag would. -->
+			<!--Links to outside websites (image sources and YouTube) will open in a new window-->
 
 			<!--Continuation of page text.-->
 			<p><em>Thrifting in NYC: For Beginners</em> was created to fulfill the requirements of <em>Project_&#60;code&#62;</em> Phase I, a Tech Connect program at the New York Public Library, NYC. This is an open source website, which means the public (you!) can be free to edit its content.</p>
