@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     context = canvas.getContext("2d");
     
-    p = document.createElement("p);
+    p = document.createElement("p");
                              
     p.innerText = "Press any key to 'draw' a box on the canvas.";    
     
