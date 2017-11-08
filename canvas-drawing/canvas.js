@@ -6,13 +6,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     body.style.backgroundColor = "#FFFAFA";
 
-    context = canvas.getContext("2d");
-    
-    p = document.createElement("p");
-                             
-    p.innerText = "Press any key to 'draw' a box on the canvas.";    
-    
-    body.appendChild("p");                          
+    context = canvas.getContext("2d");                          
 
     document.fonts.load("50px Berkshire Swash").then( (event) => {
 
