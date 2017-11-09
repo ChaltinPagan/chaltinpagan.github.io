@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         context.fillStyle = "#800020";
         context.font = "50px Berkshire Swash";
         context.fillText("Chaltin's Canvas Drawing", 20, 50)
+        
+        context.font = "16px Berkshire Swash";
+        context.fillText("Press any key to 'draw' a box on the canvas.", 20, 80)
 
     })
 
