@@ -30,7 +30,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         g = Math.random()*255
         b = Math.random()*255
 
-        context.strokeStyle = "rgb("+r+","+g+","+b+")";
+        //RBG random generator doesn't work on Chrome browser for some reason.
+        //context.strokeStyle = "rgb("+r+","+g+","+b+")";
+        
+        //The following random hex generator code comes from Paul Irish at https://www.paulirish.com/2009/random-hex-color-code-snippets/ 
+        context.strokeStyle = '#'+ Math.floor(Math.random()*16777215).toString(16);
         context.strokeRect(x, y, w, h);
     })
 
