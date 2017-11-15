@@ -26,16 +26,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
         w = Math.random()*100
         h = Math.random()*100
 
-        r = Math.random()*255
-        g = Math.random()*255
-        b = Math.random()*255
+        // r = Math.random()*255
+        // g = Math.random()*255
+        // b = Math.random()*255
 
-        //RBG random generator doesn't work on Chrome browser for some reason.
         //context.strokeStyle = "rgb("+r+","+g+","+b+")";
+
+        //The following random hex generator code comes from Paul Irish at https://www.paulirish.com/2009/random-hex-color-code-snippets/
+        //The below hex color generator sometime generates an invalid hex code (five characters after the hashtag instead of six). I wrote a function to handle that outcome. If an invalid hex code is generated, then the rectangle will be a fallback color. The fallback color is a light gray.
+        hex = '#'+ Math.floor(Math.random()*16777215).toString(16);
+        let colorTwo = () => (hex.length === 7) ? hex : "#d3d3d3";
+
+        context.strokeStyle = colorTwo();
+        console.log(`Color is ${colorTwo()}.`);
+        console.log(`Coordinates are ${x}, ${y}.`);
+        console.log(`Height is ${h} and width is ${w}.`);
         
-        //The following random hex generator code comes from Paul Irish at https://www.paulirish.com/2009/random-hex-color-code-snippets/ 
-        context.strokeStyle = '#'+ Math.floor(Math.random()*16777215).toString(16);
         context.strokeRect(x, y, w, h);
+        
     })
 
 
