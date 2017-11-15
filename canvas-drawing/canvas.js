@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.addEventListener("keypress", (event) => {
 
         x = Math.random()*1000
-        y = Math.random()*1000
+        y = Math.random()*800
         w = Math.random()*100
         h = Math.random()*100
 
