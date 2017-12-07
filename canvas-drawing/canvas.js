@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     })
 
+    //All shapes are line drawings. They are not filled with color.
+    //Works for most keys. Keys that don't produce a shape include "Shift", "Ctrl", and "Alt." 
     document.addEventListener("keypress", (event) => {
 
         x = Math.random()*1000;
@@ -26,6 +28,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         w = Math.random()*100;
         h = Math.random()*100;
         r = Math.random()*100;
+        xTwo = Math.random()*100; //Use xPlus for x in lineTo function for triangles.
+        yTwo = Math.random()*100; //Use yPlus for y in lineTo function for triangles.
+        xThree = Math.random()*100; //Use xPlus for x in lineTo function for triangles.
+        yThree = Math.random()*100; //Use yPlus for y in lineTo function for triangles.
 
         //I originally used RGB values for my shapes. For some reason, Chrome displayed all random colors as black. I changed the random color generator to hex values.
         // r = Math.random()*255
@@ -38,24 +44,36 @@ document.addEventListener("DOMContentLoaded", (event) => {
         hex = '#'+ Math.floor(Math.random()*16777215).toString(16);
         let colorTwo = () => (hex.length === 7) ? hex : "#d3d3d3";
 
-        if (event.key.match(/[a-z]/)) {
-            //Keys a through z will produce a rectangle. This is case insensitive.
+        if (event.key.match(/[a-z]/) && event.key.length === 1) {
+            //All letter keys (a-z) will produce a rectangle. This is case insensitive.
             context.strokeStyle = colorTwo();
             context.strokeRect(x, y, w, h);
             console.log(event);
             console.log(`Color is ${colorTwo()}.`);
             console.log(`Coordinates are ${x}, ${y}.`);
             console.log(`Height is ${h} and width is ${w}.`);
-        } else {
-            //All other keys will produce a circle.
+        } else if (event.key.match(/[0-9]/)){
+            //All number keys (0-9) will produce a circle.
             context.strokeStyle = colorTwo();
             context.beginPath();
             context.arc(x,y,r,0,2*Math.PI);
             context.stroke();
+        } else {
+            // All other keys will produce a triangle.
+            context.strokeStyle = colorTwo();
+            context.strokeStyle = colorTwo();
+            context.beginPath();
+            context.moveTo(x, y);
+            //Add xTwo, yTwo, xThree, yThree to x and y to draw the triangle on different parts of the canvas. Otherwise, triangles will be concentrated near (0,0). 
+            context.lineTo(x+xTwo, y+yTwo); 
+            context.lineTo(x+xThree, y+yThree); 
+            context.closePath(); 
+            context.stroke(); 
             console.log(event);
             console.log(`Color is ${colorTwo()}.`);
-            console.log(`Coordinates are ${x}, ${y}.`);
-            console.log(`Radius is ${r}.`);
+            console.log(`Strating coordinates are ${x}, ${y}.`);
+            console.log(`Second stroke moves to ${xTwo}, ${yTwo}.`);
+            console.log(`Thrid stroke moves to ${xThree}, ${yThree}.`);
         }
         
     });
