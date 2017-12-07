@@ -48,10 +48,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             //All lowercase letter keys (a-z) will produce a rectangle. I added a length boolean because I wanted to limit rectangles to single-letter keypress events. Keys such as "Enter" and "Backspace" will produce a circle.
             context.strokeStyle = colorTwo();
             context.strokeRect(x, y, w, h);
-            console.log(`Lowercase ${event.key} draws a rectangle.`);
-            console.log(`Color is ${colorTwo()}.`);
-            console.log(`Coordinates are ${x}, ${y}.`);
-            console.log(`Height is ${h} and width is ${w}.`);
+            console.log(`Lowercase ${event.key} draws a rectangle.\nColor is ${colorTwo()}.\nCoordinates are ${x}, ${y}.\nHeight is ${h} and width is ${w}.`);
         } else if (event.key.match(/[A-Z]/) && event.key.length === 1) {
             //Capital letters will produce a line.
             context.strokeStyle = colorTwo();
@@ -59,21 +56,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
             context.moveTo(x, y);
             context.lineTo(xTwo, yTwo); 
             context.stroke(); 
-            console.log(`Uppercase ${event.key} draws a line.`);
-            console.log(`Color is ${colorTwo()}.`);
-            console.log(`Starting coordinates are ${x}, ${y}.`);
-            console.log(`Ending coordinates are ${xTwo}, ${yTwo}.`);
-            console.log(`Line Length is ${sqrt}.`)
+            console.log(`Uppercase ${event.key} draws a line.\nColor is ${colorTwo()}.\nStarting coordinates are ${x}, ${y}.\nEnding coordinates are ${xTwo}, ${yTwo}.\nLine length is ${sqrt}.`);
+            // console.log(`Color is ${colorTwo()}.`);
+            // console.log(`Starting coordinates are ${x}, ${y}.`);
+            // console.log(`Ending coordinates are ${xTwo}, ${yTwo}.`);
+            // console.log(`Line Length is ${sqrt}.`)
         } else if (event.key.match(/[0-9]/)){
             //All number keys (0-9) will produce a circle.
             context.strokeStyle = colorTwo();
             context.beginPath();
             context.arc(x,y,r,0,2*Math.PI);
             context.stroke();
-            console.log(`${event.key} draws a circle.`);
-            console.log(`Color is ${colorTwo()}.`);
-            console.log(`Coordinates are ${x}, ${y}.`);
-            console.log(`Radius is ${r}.`);
+            console.log(`${event.key} draws a circle.\nColor is ${colorTwo()}.\nCoordinates are ${x}, ${y}.\nRadius is ${r}.`);
         } else {
             // All other keys will produce a triangle. Does not include "Shift", "Ctrl", or "Alt".
             context.strokeStyle = colorTwo();
@@ -83,11 +77,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             context.lineTo(xThree,yThree); 
             context.closePath(); 
             context.stroke(); 
-            console.log(`${event.key} draws a triangle.`);
-            console.log(`Color is ${colorTwo()}.`);
-            console.log(`Starting coordinates are ${x}, ${y}.`);
-            console.log(`Second coordinates are ${xTwo}, ${yTwo}.`);
-            console.log(`Thrid coordinates are ${xThree}, ${yThree}.`);
+            console.log(`${event.key} draws a triangle.\nColor is ${colorTwo()}.\nStarting coordinates are ${x}, ${y}.\nSecond coordinates are ${xTwo}, ${yTwo}.\nThrid coordinates are ${xThree}, ${yThree}.`);
         }
         
     });
