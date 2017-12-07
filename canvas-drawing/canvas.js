@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         context.fillText("Chaltin's Canvas Drawing", 20, 50)
         
         context.font = "16px Berkshire Swash";
-        context.fillText("Press any key to 'draw' on the canvas. Different keys drae different shapes. Refresh the page to clear the canvas. Have fun!!", 20, 80)
+        context.fillText("Press any key to 'draw' on the canvas. Different keys draw different shapes. Refresh the page to clear the canvas. Have fun!!", 20, 80)
     });
 
     //All shapes are line drawings. They are not filled with color.
