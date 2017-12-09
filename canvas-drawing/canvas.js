@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             context.arc(x,yCoord(),circleR(),0,2*Math.PI);
             context.stroke();
             console.log(`${event.key} draws a circle.\nColor is ${colorTwo()}.\nCoordinates are ${x}, ${yCoord()}.\nRadius is ${circleR()}.`);
-        } else if (!event.key.match(/[a-z0-9]/i) || event.key.length != 1 || event.shiftKey) {
+        } else {
             // All other keys will produce a triangle. Includes Shift, Ctrl, Alt, and arrow keys.
             context.strokeStyle = colorTwo();
             context.beginPath();
