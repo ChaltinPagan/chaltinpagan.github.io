@@ -20,26 +20,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.addEventListener("keydown", (event) => {
 
         //Shape coordinates.
-        x = Math.random()*900;
-        y = Math.random()*700 + 150; //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
+        x = Math.floor(Math.random()*900);
+        y = Math.floor(Math.random()*700 + 150); //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
         let yCoord = () => (y <= 675) ? y : 675; //I wrote this function for the y-coordinate to compensate for the additional 150px added to the original y variable. This way, a shape will not be drawn outside the visible area.
 
-        //For width, height and radius, I wrote functions in case a randomly generated dimension is too small to be seen with the naked eye. 
-        w = Math.random()*100;
+        //For width, height and radius, I wrote conditionals in case a randomly generated dimension is too small to be seen with the naked eye. 
+        w = Math.floor(Math.random()*100);
         let width = () => (w < 10 ? 10 : w);
-        h = Math.random()*100;
+        h = Math.floor(Math.random()*100);
         let height = () => (h < 10 ? 10 : h);
-        r = Math.random()*100;
+        r = Math.floor(Math.random()*100);
         let circleR = () => (r < 10 ? 10 : r); 
 
         //For the circles, I created additional variables for the x-,y-coordinates of the triangles. Without these, the triangles will be concentrated near (0,0).
-        xTwo = x + Math.random()*100; //The x-coordinate of the second lineTo() of the triangle.
-        yTwo = yCoord() + Math.random()*100 + 5; //The y-coordinate of the second lineTo() of the triangle.
-        xThree = x + Math.random()*100; //The x-coordinate of the thrid lineTo() of the triangle.
-        yThree = yCoord() + Math.random()*100 + 5; //The y-coordinate of the third lineTo() of the triangle.
+        xTwo = x + Math.floor(Math.random()*100); //xTwo is the x-coordinate of the second lineTo() of the triangle. 
+        yTwo = yCoord() + Math.floor(Math.random()*100 + 5); //yTwo is the y-coordinate of the second lineTo() of the triangle. 
+        xThree = x + Math.floor(Math.random()*100); //xThree is the x-coordinate of the thrid lineTo() of the triangle.
+        yThree = yCoord() + Math.floor(Math.random()*100 + 5); //yThree is the y-coordinate of the third lineTo() of the triangle.
 
         //Capital letters draw lines. This will calculate the length of the line.
-        sqrt = Math.sqrt(Math.pow(xTwo - x, 2) + Math.pow(yTwo - y, 2)); 
+        sqrt = Math.floor(Math.sqrt(Math.pow(xTwo - x, 2) + Math.pow(yTwo - y, 2)) ); 
 
         //I originally used RGB values for my shapes. For some reason, Chrome displayed all the random colors as black. I changed the random color generator to hex values.
         // r = Math.random()*255
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         //context.strokeStyle = "rgb("+r+","+g+","+b+")";
 
         //The following random hex generator code comes from Paul Irish at https://www.paulirish.com/2009/random-hex-color-code-snippets/
-        //The below hex color generator sometimes generates an invalid hex code (five characters after the hashtag instead of six). I wrote a function to address that outcome. If an invalid hex code is generated, then the shape will be a fallback color. The fallback color is a light gray.
+        //The below hex color generator sometimes generates an invalid hex code (five characters after the hashtag instead of six). I wrote a conditional to address that outcome. If an invalid hex code is generated, then the shape will be a fallback color. The fallback color is a light gray.
         hex = '#'+ Math.floor(Math.random()*16777215).toString(16);
         let colorTwo = () => (hex.length === 7) ? hex : "#d3d3d3";
 
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         } else if (event.shiftKey && event.key.match(/[A-Z]/) && event.key.length === 1) {
             //Capital letters will produce a line.
             //Since I'm using keydown instead of keypress event listener, I now have to test for a Shift key event.
-            //Using keydown instead of keypress event listener means a triangle will be produced in addition to a line. Keys other than letters and numbers will draw triangles. See last else if statement.
+            //Using keydown instead of keypress event listener means a triangle will be produced in addition to a line. This happens because keys that don't produce a character value will draw a triangle. See the else statement.
             context.strokeStyle = colorTwo();
             context.beginPath();
             context.moveTo(x, yCoord());
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             context.beginPath();
             context.arc(x,yCoord(),circleR(),0,2*Math.PI);
             context.stroke();
-            console.log(`${event.key} draws a circle.\nColor is ${colorTwo()}.\nCoordinates are ${x}, ${yCoord()}.\nRadius is ${circleR()}.`);
+            console.log(`Number ${event.key} draws a circle.\nColor is ${colorTwo()}.\nCoordinates are ${x}, ${yCoord()}.\nRadius is ${circleR()}.`);
         } else {
             // All other keys will produce a triangle. Includes Shift, Ctrl, Alt, and arrow keys.
             context.strokeStyle = colorTwo();
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             context.lineTo(xThree,yThree); 
             context.closePath(); 
             context.stroke(); 
-            console.log(`${event.key} draws a triangle.\nColor is ${colorTwo()}.\nStarting point coordinates are ${x}, ${yCoord()}.\nSecond point coordinates are ${xTwo}, ${yTwo}.\nThird point coordinates are ${xThree}, ${yThree}.`);
+            console.log(`The ${event.key} key draws a triangle.\nColor is ${colorTwo()}.\nStarting point coordinates are ${x}, ${yCoord()}.\nSecond point coordinates are ${xTwo}, ${yTwo}.\nThird point coordinates are ${xThree}, ${yThree}.`);
         }
         
     });   
