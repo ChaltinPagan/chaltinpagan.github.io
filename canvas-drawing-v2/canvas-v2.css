@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #800020;
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+}
+
+h1, h3 {
+    margin-top: 0;
+}
+
+#canvas {
+    /* margin-top: 150px; */
+    width: 99vw;
+    height: 86vh;
+    border: 1px solid black;
+}
+
+#keyboard {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+button {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    box-sizing: border-box;
+    /*qwerty keyboard 
+    width: 40px; */
+    width: 100px;
+}
+
+/* Keyboard disappers when web page is viewed on desktop screen. */
+@media screen and (min-width: 1200px) and (min-height: 700px) {
+    #instruct2 {
+        display: none;
+    }
+    #keyboard {
+        display: none;
+        height: 0;
+    }
+}
+
+/*Keyboard for mobile phone screens.*/
+@media screen and (max-height: 800px) {
+    h1 {
+        font-size: 20px;
+    }
+    #instruct1 {
+        display: none;
+    }
+    #instruct2 {
+        font-size: 14px;
+    }
+    #canvas {
+        height: 70vh;
+    }
+    #keyboard {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+        width: 100vw;
+        height: 25vh;
+        position: fixed;
+        bottom: -35px;
+        left: 0;
+        /* border: 1px dotted red; */
+    }
+    button {
+        width: 22vw;
+        height: 22vw;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Keyboard for tablets in vertical orientation */
+@media screen and (min-width: 700px) and (orientation: portrait){
+    h1 {
+        font-size: 20px;
+    }
+    #instruct1 {
+        display: none;
+    }
+    #instruct2 {
+        font-size: 14px;
+    }
+    #canvas {
+        height: 80vh;
+    }
+    #keyboard {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+        width: 100vw;
+        height: 25vh;
+        position: fixed;
+        bottom: -125px;
+        left: 0;
+        /* border: 1px dotted red; */
+    }
+    button {
+        width: 12vw;
+        height: 12vw;
+        margin: 0 20px;
+        padding: 0;
+    }
+}
+
+/* Keyboard for tablets in vertical orientation */
+@media screen and (max-height: 800px) and (orientation: landscape){
+    h1 {
+        font-size: 20px;
+    }
+    #instruct1 {
+        display: none;
+    }
+    #instruct2 {
+        font-size: 14px;
+    }
+    #canvas {
+        height: 70vh;
+    }
+    #keyboard {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+        width: 100vw;
+        height: 25vh;
+        position: fixed;
+        bottom: -40px;
+        left: 0;
+        /* border: 1px dotted red; */
+    }
+    button {
+        width: 10vw;
+        height: 10vw;
+        margin: 0 20px;
+        padding: 0;
+    }
+}
+
+/* @media screen and (max-width: 800px) and (orientation: portrait) {
+    h1 {
+        font-size: 2em;
+    }
+    #instruct1 {
+        display: none;
+    }
+    #instruct2 {
+        font-size: 1em;
+    }
+    #canvas {
+        height: 80vh;
+    }
+    #keyboard {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+        width: 100vw;
+        height: 20vh;
+        position: fixed;
+        bottom: -35px;
+        left: 0;
+        
+    }
+    #button {
+        width: 22vw;
+        height: 22vw;
+        margin: 0;
+        padding: 0;
+    }
+} */
+
+
+
