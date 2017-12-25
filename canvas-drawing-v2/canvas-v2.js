@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     
     //This event listener is for mobile devices.
-    box.addEventListener("click", (event) => {
+    box.addEventListener("touchend", (event) => {
         let e = event.target.id;
         console.log(e);
         console.log(event);
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     //This event listener is for mobile devices.
-    line.addEventListener("click", (event) => {
+    line.addEventListener("touchend", (event) => {
         let e = event.target.id;
         console.log(e);
         console.log(event);
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
         
     //This event listener is for mobile devices.
-    circle.addEventListener("click", (event) => {
+    circle.addEventListener("touchend", (event) => {
         let e = event.target.id;
         console.log(e);
         console.log(event);
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     //This event listener is for mobile devices.
-    triangle.addEventListener("click", (event) => {
+    triangle.addEventListener("touchend", (event) => {
         let e = event.target.id;
         console.log(e);
         console.log(event);
