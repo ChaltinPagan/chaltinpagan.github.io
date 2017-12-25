@@ -94,8 +94,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         console.log(event);
         //Shape coordinates.
         x = Math.floor(Math.random()*900);
-        y = Math.floor(Math.random()*450 + 150); //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
-        let yCoord = () => (y <= 575) ? y : 575; //I wrote this function for the y-coordinate to compensate for the additional 150px added to the original y variable. This way, a shape will not be drawn outside the visible area.
+        y = Math.floor(Math.random()*600); //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
+        let yCoord = () => (y <= 475) ? y : 475; //I wrote this function for the y-coordinate to compensate for the additional 150px added to the original y variable. This way, a shape will not be drawn outside the visible area.
 
         //For width, height and radius, I wrote conditionals in case a randomly generated dimension is too small to be seen with the naked eye. 
         w = Math.floor(Math.random()*100);
@@ -119,8 +119,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         console.log(event);
         //Shape coordinates.
         x = Math.floor(Math.random()*900);
-        y = Math.floor(Math.random()*450 + 150); //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
-        let yCoord = () => (y <= 575) ? y : 575; //I wrote this function for the y-coordinate to compensate for the additional 150px added to the original y variable. This way, a shape will not be drawn outside the visible area.
+        y = Math.floor(Math.random()*600); //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
+        let yCoord = () => (y <= 475) ? y : 475; //I wrote this function for the y-coordinate to compensate for the additional 150px added to the original y variable. This way, a shape will not be drawn outside the visible area.
 
         //For the circles, I created additional variables for the x-,y-coordinates of the triangles. Without these, the triangles will be concentrated near (0,0).
         xTwo = x + Math.floor(Math.random()*100); //xTwo is the x-coordinate of the second lineTo() of the triangle. 
@@ -151,8 +151,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         console.log(event);
         //Shape coordinates.
         x = Math.floor(Math.random()*900);
-        y = Math.floor(Math.random()*450 + 150); //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
-        let yCoord = () => (y <= 575) ? y : 575; //I wrote this function for the y-coordinate to compensate for the additional 150px added to the original y variable. This way, a shape will not be drawn outside the visible area.
+        y = Math.floor(Math.random()*600); //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
+        let yCoord = () => (y <= 475) ? y : 475; //I wrote this function for the y-coordinate to compensate for the additional 150px added to the original y variable. This way, a shape will not be drawn outside the visible area.
 
         //For width, height and radius, I wrote conditionals in case a randomly generated dimension is too small to be seen with the naked eye. 
         r = Math.floor(Math.random()*100);
@@ -176,8 +176,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         console.log(event);
         //Shape coordinates.
         x = Math.floor(Math.random()*900);
-        y = Math.floor(Math.random()*450 + 150); //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
-        let yCoord = () => (y <= 575) ? y : 575; //I wrote this function for the y-coordinate to compensate for the additional 150px added to the original y variable. This way, a shape will not be drawn outside the visible area.
+        y = Math.floor(Math.random()*600); //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
+        let yCoord = () => (y <= 475) ? y : 475; //I wrote this function for the y-coordinate to compensate for the additional 150px added to the original y variable. This way, a shape will not be drawn outside the visible area.
 
         //For the circles, I created additional variables for the x-,y-coordinates of the triangles. Without these, the triangles will be concentrated near (0,0).
         xTwo = x + Math.floor(Math.random()*100); //xTwo is the x-coordinate of the second lineTo() of the triangle. 
