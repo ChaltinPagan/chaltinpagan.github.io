@@ -151,39 +151,3 @@ button {
         padding: 0;
     }
 }
-
-/* @media screen and (max-width: 800px) and (orientation: portrait) {
-    h1 {
-        font-size: 2em;
-    }
-    #instruct1 {
-        display: none;
-    }
-    #instruct2 {
-        font-size: 1em;
-    }
-    #canvas {
-        height: 80vh;
-    }
-    #keyboard {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        display: inline-block;
-        width: 100vw;
-        height: 20vh;
-        position: fixed;
-        bottom: -35px;
-        left: 0;
-        
-    }
-    #button {
-        width: 22vw;
-        height: 22vw;
-        margin: 0;
-        padding: 0;
-    }
-} */
-
-
-

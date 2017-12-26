@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.addEventListener("keydown", (event) => {
         //Shape coordinates.
         x = Math.floor(Math.random()*900);
-        y = Math.floor(Math.random()*450 + 150); //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
+        y = Math.floor(Math.random()*600); //I added 150 to the y-coordinate so shapes won't obstruct the fillText() at the top of the page.
         let yCoord = () => (y <= 475) ? y : 475; //I wrote this function for the y-coordinate to compensate for the additional 150px added to the original y variable. This way, a shape will not be drawn outside the visible area.
 
         //For width, height and radius, I wrote conditionals in case a randomly generated dimension is too small to be seen with the naked eye. 
