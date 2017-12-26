@@ -4,16 +4,34 @@
 
     <title>Canvas Drawing</title>
 
-    <link rel="stylesheet" type="text/css" href="canvas.css">
+    <link rel="stylesheet" type="text/css" href="canvas-v2.css">
 
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
     </head>
 
     <body>
 
-        <canvas id="canvas" width="1000" height="800"></canvas> 
+        <div id="head">
+            <h1>Chaltin's Canvas Drawing</h1>
+            <h3 id="instruct1">Press any key to 'draw' on the canvas. Different keys draw different shapes. Refresh the page to clear the canvas. Have fun!!</h3>
+            <h3 id="instruct2">"Draw" on the canvas with the buttons. </h3>
+        </div>
 
-        <script src="canvas.js"></script>
+        <canvas id="canvas" width="1000" height="600"></canvas> 
+
+        <div id="keyboard">
+            <ul>
+                <button id="box">box</button>
+                <button id="circle">circle</button>
+                <button id="triangle">triangle</button>
+                <button id="line">line</button>
+            </ul>
+        </div>
+
+        <script src="canvas-v2.js"></script>
     </body>
 </html>
