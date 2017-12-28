@@ -1,15 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-#canvas {
-    width: 100vw;
-    height: 100vh;
-}
-body {
-    margin: 0;
-    padding: 0;
     color: #800020;
     font-family: 'Berkshire Swash', cursive;
     text-align: center;
@@ -19,13 +10,13 @@ h1, h3 {
     margin-top: 0;
 }
 
-#canvas {
-    /* margin-top: 150px; */
+#canvas1, #canvas2 {
     width: 99vw;
     height: 86vh;
     border: 1px solid black;
 }
 
+/*Mobile devices will have a simple keyboard of four buttons: box, circle. triangle, and line*/
 #keyboard {
     text-align: center;
 }
@@ -43,8 +34,6 @@ button {
     border-radius: 10px;
     background-color: lightgray;
     box-sizing: border-box;
-    /*qwerty keyboard 
-    width: 40px; */
     width: 100px;
 }
 
@@ -56,6 +45,9 @@ button {
     #keyboard {
         display: none;
         height: 0;
+    }
+    #canvas2 {
+        display: none;
     }
 }
 
@@ -70,7 +62,10 @@ button {
     #instruct2 {
         font-size: 14px;
     }
-    #canvas {
+    #canvas1 {
+        display: none;
+    }
+    #canvas2 {
         height: 55vh;
     }
     #keyboard {
@@ -104,7 +99,10 @@ button {
     #instruct2 {
         font-size: 14px;
     }
-    #canvas {
+    #canvas1 {
+        display: none;
+    }
+    #canvas2 {
         height: 70vh;
     }
     #keyboard {
@@ -138,7 +136,10 @@ button {
     #instruct2 {
         font-size: 14px;
     }
-    #canvas {
+    #canvas1 {
+        display: none;
+    }
+    #canvas2 {
         height: 60vh;
     }
     #keyboard {

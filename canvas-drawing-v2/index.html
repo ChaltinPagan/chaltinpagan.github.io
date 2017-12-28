@@ -17,12 +17,21 @@
 
         <div id="head">
             <h1>Chaltin's Canvas Drawing</h1>
+
+            <!--Instruct1 instruction appear on desktop.-->
             <h3 id="instruct1">Press any key to 'draw' on the canvas. Different keys draw different shapes. Refresh the page to clear the canvas. Have fun!!</h3>
-            <h3 id="instruct2">"Draw" on the canvas with the buttons. </h3>
+            
+            <!--Instruct2 instuctions appear fr mobile devices and tablets.-->
+            <h3 id="instruct2">"Draw" on the canvas with the buttons.</h3>
         </div>
 
-        <canvas id="canvas" width="1000" height="600"></canvas> 
+        <!--Canvas1 is for desktop.-->
+        <canvas id="canvas1" width="1000" height="600"></canvas> 
 
+        <!--Canvas2 is for mobile devices and tablets.-->
+        <canvas id="canvas2" width="600" height="300"></canvas>
+
+        <!--This keyboard will appear for mobile devices and tablets only. Instead of a QWERTY keyboard, I used a four-button keyboard.-->
         <div id="keyboard">
             <ul>
                 <button id="box">box</button>
