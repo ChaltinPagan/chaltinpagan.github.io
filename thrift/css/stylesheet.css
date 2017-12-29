@@ -78,18 +78,20 @@ Also, I declared the font color in each .head p because I won't get the right re
 }
 
 /*I had red "test" borders around my divs when I started coding the website. When I removed the red border, a funny thing happened: The height of my navigation became smaller. When I inspected the .nav div and the <p> element, I saw there was top and bottom margin space of 18px for the div. For some reason, the margin space of the div filled with background color only when I had the border around the div. If I declared a height for my div, then the text would abut with the top of the div and I would have to add padding or margin to center it vertically. For my solution, I decided for the ".nav p" to make the margin 0px and replace that with top and bottom padding. The padding will fill with background color. Now, my navigation height will appear the same with or without the red div border. I did this to the <p> element rather than the <a> element since my <a> element has a different background color on the hover and I don't want to increase the active link space.*/
-.nav p {
+.nav li {
+	display: inline;
+	list-style-type: none;
+}
+
+.nav ul {
 	padding-top: 18px;
 	padding-bottom: 18px;
-	margin: 0px;
 }
 
 .nav a {
 	text-decoration: none;
 	color: #2c3e50;
 	text-transform: uppercase;
-	margin-left: 40px;
-	margin-right: 40px;
 	background-color: #33cccc;
 }
 
@@ -103,7 +105,7 @@ Also, I declared the font color in each .head p because I won't get the right re
 	width: 400px;
 }
 
-/*".tall" is on the Resources page.*/
+/*".book" is on the Resources page.*/
 .img, .book {
 	float: right;
 	font-size: 12px;
@@ -131,11 +133,15 @@ Also, I declared the font color in each .head p because I won't get the right re
 	margin-bottom: 30px;
 }
 
+.storenav li {
+	list-style-type: none;
+	display: inline;
+}
+
 .storenav a {
 	color: #000000;
 	text-decoration: none;
 	text-transform: uppercase;
-	margin: 10px 30px;
 	padding: 7px;
 	background-color: #2980b9;
 	border-radius: 20px;
@@ -223,4 +229,81 @@ textarea{
 	padding-top: 100px;
 }
 
+/*This makes the website mobile-friendly.*/
+@media screen and (max-width: 450px) {
+	body {
+		width: 100%;
+	}
+	.nav li {
+		display: block;
+	}
+	.back {
+		display: none;
+	}
+	.head p:first-child {
+		color: #2c3e50;
+		font-size: 30px;
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+	.head p:nth-child(2) {
+		color: #2c3e50;
+		font-style: italic;
+		font-size: 20px;
+	}
+	.storenav {
+		margin: 0;
+	}
+	.storenav li {
+		display: block;
+		margin: 0 0 30px 0;
+	}
+	.img {
+		margin-bottom: 20px;
+	}
+	.img img, .thrift img {
+		width: 70vw;
+		float: none;
+		margin: 0 auto;
+	}
+	.book img {
+		height: 300px;
+		float: none;
+	}
+	.footer {
+		border-top: 1px solid #2c3e50;
+	}
+	#spaceabove {
+		padding-top: 0;
+	}
+}
 
+/*This makes the website tablet-friendly.*/
+@media screen and (max-width: 1025px) {
+	body {
+		width: 100%;
+	}
+	.nav li {
+		margin: auto 20px;
+	}
+	.back {
+		display: none;
+	}
+	.head p:first-child {
+		color: #2c3e50;
+		font-size: 30px;
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+	.head p:nth-child(2) {
+		color: #2c3e50;
+		font-style: italic;
+		font-size: 20px;
+	}
+	.footer {
+		border-top: 1px solid #2c3e50;
+	}
+	#spaceabove {
+		padding-top: 0;
+	}
+}
