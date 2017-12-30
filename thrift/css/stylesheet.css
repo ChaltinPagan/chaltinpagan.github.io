@@ -136,6 +136,7 @@ Also, I declared the font color in each .head p because I won't get the right re
 .storenav li {
 	list-style-type: none;
 	display: inline;
+	margin: 0 20px;
 }
 
 .storenav a {
@@ -230,7 +231,7 @@ textarea{
 }
 
 /*This makes the website mobile-friendly.*/
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 	body {
 		width: 100%;
 	}
@@ -278,27 +279,26 @@ textarea{
 	}
 }
 
-/*This makes the website tablet-friendly.*/
-@media screen and (max-width: 1025px) {
+/* This makes the website tablet-friendly. */
+/* @media screen and (min-width: 600px) and (orientation: portrait) {
 	body {
 		width: 100%;
 	}
 	.nav li {
-		margin: auto 20px;
+		margin: auto 10px;
 	}
 	.back {
 		display: none;
 	}
-	.head p:first-child {
-		color: #2c3e50;
-		font-size: 30px;
-		margin-top: 30px;
-		margin-bottom: 0;
+	.recycle img {
+		width: 30vw;
 	}
-	.head p:nth-child(2) {
-		color: #2c3e50;
-		font-style: italic;
-		font-size: 20px;
+	.img img {
+		width: 75vw;
+	}
+	.storenav li {
+		display: inline;
+		margin: 0 20px;
 	}
 	.footer {
 		border-top: 1px solid #2c3e50;
@@ -306,4 +306,30 @@ textarea{
 	#spaceabove {
 		padding-top: 0;
 	}
-}
+} */
+
+/*This makes the website tablet-friendly.*/
+/* @media screen and (max-height: 1024px) and (min-width: 700px){
+	body {
+		width: 100%;
+	}
+	.nav li {
+		margin: auto 10px;
+	}
+	.back {
+		display: none;
+	}
+	.recycle img {
+		width: 30vw;
+	}
+	.storenav li {
+		display: inline;
+		margin: 0 20px;
+	}
+	.footer {
+		border-top: 1px solid #2c3e50;
+	}
+	#spaceabove {
+		padding-top: 0;
+	}
+} */
