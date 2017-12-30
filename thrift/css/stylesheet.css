@@ -231,7 +231,7 @@ textarea{
 }
 
 /*This makes the website mobile-friendly.*/
-@media screen and (max-width: 500px) {
+@media screen and (max-height: 800px) {
 	body {
 		width: 100%;
 	}
