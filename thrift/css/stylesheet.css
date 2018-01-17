@@ -81,6 +81,7 @@ Also, I declared the font color in each .head p because I won't get the right re
 .nav li {
 	display: inline;
 	list-style-type: none;
+	margin: auto 30px;
 }
 
 .nav ul {
@@ -231,7 +232,7 @@ textarea{
 }
 
 /*This makes the website mobile-friendly.*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: portrait) {
 	body {
 		width: 100%;
 	}
@@ -280,26 +281,13 @@ textarea{
 }
 
 /*Modify "Back to Top" button for tablets.*/
-@media screen and (min-width: 600px) and (orientation: portrait) {
+/* @media screen and (max-height: 1025px) and (orientation: portrait) {
 	.back {
-		background-color: #2980b9;
-		height: 65px;
-		width: 65px;
-		position: fixed;
-		bottom: 10px;
-		right: 10px;
-		border-radius: 50%;
-		border: 3px solid #000000;
-	}
-	.back img {
-		height: 50px;
-		margin-left: 8px;
-		margin-top: -7px;
-	}
-}
+		display: none;
+} */
 
 /* This makes the website tablet-friendly. */
-/* @media screen and (min-width: 600px) and (orientation: portrait) {
+@media screen and (min-width: 600px) and (max-width: 1050px) and (orientation: portrait) {
 	body {
 		width: 100%;
 	}
@@ -312,7 +300,7 @@ textarea{
 	.recycle img {
 		width: 30vw;
 	}
-	.img img {
+	.img{
 		width: 75vw;
 		float: none;
 	}
@@ -326,7 +314,7 @@ textarea{
 	#spaceabove {
 		padding-top: 0;
 	}
-} */
+}
 
 /*This makes the website tablet-friendly.*/
 /* @media screen and (max-height: 1024px) {

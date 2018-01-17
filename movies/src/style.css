@@ -1,0 +1,119 @@
+/*
+Color palette is "Ice Cream Cake" from Color-Hex http://www.color-hex.com/color-palette/52663.
+*/
+
+html {
+}
+
+body {
+  margin: 0 auto 125px;
+  color: #2d0e00;
+  background-color: #ffd991;
+  font-family: 'Bellefair', serif;
+  font-size: 26px;
+}
+
+.logo {
+  border: 3px dotted #ffffff;
+  display: inline;
+  padding: 10px;
+}
+
+nav {
+  background-color: #00a994;
+  padding: 25px;
+  text-align: left;
+  position: fixed;
+  width: 100vw;
+  top: 0
+}
+
+nav a {
+  margin: 0 35px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #ffd991;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2d0e00;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  width: 60%;
+  margin: 125px auto 0;
+}
+
+img {
+  display: block;
+  margin: auto;
+  height: 400px;
+}
+
+.external-link {
+  display: inline;
+  height: 36px;
+  margin: auto;
+  padding: 0;
+  vertical-align: text-bottom;
+}
+
+h1 {
+  text-align: center;
+}
+
+.movie-list {
+  width: 50%;
+  margin: auto;
+}
+
+.movie-list li, .genre-list li {
+  margin: 20px auto;
+}
+
+select {
+  color: #2d0e00;
+  display: block;
+  margin: auto;
+}
+
+.genre-results {
+  width: 50%;
+  margin: 125px auto 0;
+}
+
+.home-grid {
+  text-align: center;
+}
+
+.home-grid img {
+  display: inline-block;
+  margin: 0px 5px;
+  height: 300px;
+  width: 200px;
+}
+
+footer {
+  font-size: 18px;
+  text-align: center;
+  position: fixed;
+  margin: 0 auto;
+  bottom: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100vw;
+  background-color: #ffffff;
+  border-top: 1px #00a994 solid;
+}
+
+footer a {
+  color: #00a994;
+}
