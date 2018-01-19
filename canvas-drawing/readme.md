@@ -8,7 +8,7 @@ Desktop version: "Draw" shapes on the canvas by typing on your keyboard.
 
 Mobile/Tablet version: "Draw" shapes with the buttons displayed onscreen.
 
-Play with the Canvas Drawing at [http://chaltinpagan.github.io/canvas-drawing](http://chaltinpagan.github.io/canvas-drawing)
+Play with the Canvas Drawing at [https://chaltinpagan.github.io/canvas-drawing](https://chaltinpagan.github.io/canvas-drawing)
 
 ## Desktop
 
@@ -20,6 +20,8 @@ Numbers draw circles.
 Non-alphanumeric keys draw triangles.
 
 Coordinates, shape dimensions, and hex colors are randomly generated. There are ternary operators in place to prevent shapes from falling outside the canvas, to prevent shapes from being too small, and to prevent the generation of an invalid hex code.
+
+Hex code generator comes from Paul Irish at [https://www.paulirish.com/2009/random-hex-color-code-snippets/](https://www.paulirish.com/2009/random-hex-color-code-snippets/)
 
 Keypress event, shape, coordinates, dimensions, and hex color will be logged to the console.
 
