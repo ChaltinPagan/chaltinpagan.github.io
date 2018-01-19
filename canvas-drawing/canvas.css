@@ -125,7 +125,7 @@ button {
     }
 }
 
-/* Keyboard for tablets in vertical orientation */
+/* Keyboard for tablets in horizontal orientation */
 @media screen and (max-height: 800px) and (orientation: landscape){
     h1 {
         font-size: 20px;
