@@ -1,6 +1,6 @@
 # Table of Contents
 
-##Thrifing in NYC (2017)
+## Thrifing in NYC (2017)
 Project made during [Project Code](https://sites.google.com/a/nypl.org/techconnect/project_-code-1) at the New York Public Library.
 
 Built with HTML and CSS.
