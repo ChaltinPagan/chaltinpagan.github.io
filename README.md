@@ -1,9 +1,9 @@
 # Table of Contents
 
-[Thrifting in NYC](#thrift)
-[Canvas Drawing](#canvas)
+* [Thrifting in NYC](#thrift)
+* [Canvas Drawing](#canvas)
 
-## Thrifing in NYC (2017) {: #thrift }
+## Thrifing in NYC (2017) <a id="thrift"></a>
 
 Project made during [Project Code](https://sites.google.com/a/nypl.org/techconnect/project_-code-1) at the New York Public Library.
 
@@ -17,7 +17,7 @@ Mobile-friendly Version: [chaltinpagan.github.io/thrift](https://chaltinpagan.gi
 
 ![Screenshot](/screenshots/thrift-screen-1.png)
 
-## Canvas Drawing (2017) {: #canvas }
+## Canvas Drawing (2017) <a id="canvas"></a>
 
 Project made during Access Code at [Coalition for Queens](https://www.c4q.nyc/) (C4Q).
 
