@@ -7,9 +7,11 @@ Built with HTML and CSS.
 
 GitHub: [https://github.com/ChaltinPagan/chaltinpagan.github.io](https://github.com/ChaltinPagan/chaltinpagan.github.io)
 
-Website: [chaltinpagan.github.io](chaltinpagan.github.io)
+Website: [chaltinpagan.github.io](https://chaltinpagan.github.io)
 
-Mobile-friendly Version: [chaltinpagan.github.io/thrift](chaltinpagan.github.io/thrift) 
+Mobile-friendly Version: [chaltinpagan.github.io/thrift](https://chaltinpagan.github.io/thrift) 
+
+![Screenshot](/screenshots/thrift-screen-1.png)
 
 ## Canvas Drawing (2017)
 Project made during Access Code at [Coalition for Queens](https://www.c4q.nyc/) (C4Q).
@@ -18,4 +20,10 @@ Built with HTML, CSS, and JS. Moderately mobile-friendly.
 
 GitHub: [https://github.com/ChaltinPagan/chaltinpagan.github.io/tree/master/canvas-drawing](https://github.com/ChaltinPagan/chaltinpagan.github.io/tree/master/canvas-drawing)
 
-Website: [chaltinpagan.github.io/canvas-drawing](chaltinpagan.github.io/canvas-drawing)
+Website: [chaltinpagan.github.io/canvas-drawing](https://chaltinpagan.github.io/canvas-drawing)
+
+Web view:
+![Screenshot](/screenshots/canvas-drawing-screen-1.png)
+
+Mobile view:
+<img src="screenshots/canvas-drawing-screen-2.png" alt="mobile" style="width: 300px">
