@@ -26,4 +26,5 @@ Web view:
 ![Screenshot](/screenshots/canvas-drawing-screen-1.png)
 
 Mobile view:
+
 <img src="screenshots/canvas-drawing-screen-2.png" alt="mobile" style="width: 300px">
