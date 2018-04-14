@@ -37,8 +37,6 @@ Media queries can still use finessing.
 
 ## Screenshots
 
-Website: [chaltinpagan.github.io/canvas-drawing](https://chaltinpagan.github.io/canvas-drawing)
-
 Web view:
 ![Screenshot](/screenshots/canvas-drawing-screen-1.png)
 
