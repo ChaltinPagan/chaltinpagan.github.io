@@ -34,3 +34,14 @@ For the mobile version, I added onscreen buttons. These employ a **touchend** ev
 To use the desktop version, the screen must have a minimum of 700px height and 1200px wide. Zooming in will cause media queries for mobile to go into effect.
 
 Media queries can still use finessing.
+
+## Screenshots
+
+Website: [chaltinpagan.github.io/canvas-drawing](https://chaltinpagan.github.io/canvas-drawing)
+
+Web view:
+![Screenshot](/screenshots/canvas-drawing-screen-1.png)
+
+Mobile view:
+
+<img src="/screenshots/canvas-drawing-screen-2.png" alt="mobile" style="width: 300px">
