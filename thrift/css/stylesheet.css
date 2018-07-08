@@ -1,8 +1,6 @@
 /*Stylesheet for "Thrifting in NYC" website. Individual Project for Tech Connect at NYPL.*/
 
-/*Apologies for the long-winded comments in my html and css documents.*/
-
-/*My color palette is from http://www.colorhunt.co 
+/* My color palette is from http://www.colorhunt.co 
 #ecf0f1 for the body background-color, a:hover, font-color of "Send" button on Contact page
 #33cccc for the background-color of the main navigation
 #2980b9 for h4, the background-color of the secondary navigation buttons on the "Stores" page, background-color of "Send" button on the Contact page, background-color of "Back to Top" button, links, and a:visited
@@ -10,20 +8,33 @@
 #000000 (black) for the font-color of the buttons on the "Stores" page and border of "Back to Top" button
 */
 
-
-/*I added a background color to the <html> element so my margins will have a different color than the body. Doing this affected the margin color on the top and bottom of the webpage. To make the <body> abut the top and bottom of the webpage, I added padding-top to .head div and padding-bottom to .footer div.*/
-html {
-	background-color: #2c3e50;
-}
-
 body {
 	font-family: 'Merriweather', serif;
-	width: 80%;
-	margin: auto;
 	background-color: #ecf0f1;
 	color: #2c3e50;
 }
 
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #33cccc;
+	color: #2c3e50;
+}
+
+nav a, nav a:visited {
+	color: #2c3e50;
+}
+
+main {
+	width: 80vw;
+	margin: 70px auto auto;
+}
+
+footer {
+	font-size: 12px;
+	text-align: center;
+}
 a, a:visited {
 	color: #2980b9;
 }
@@ -71,11 +82,11 @@ Also, I declared the font color in each .head p because I won't get the right re
 }
 
 /*This is the main navigation.*/
-.nav {
+/* .nav {
 	background-color: #33cccc;
 	text-align: center;
 	font-size: 18px;
-}
+} */
 
 /*I had red "test" borders around my divs when I started coding the website. When I removed the red border, a funny thing happened: The height of my navigation became smaller. When I inspected the .nav div and the <p> element, I saw there was top and bottom margin space of 18px for the div. For some reason, the margin space of the div filled with background color only when I had the border around the div. If I declared a height for my div, then the text would abut with the top of the div and I would have to add padding or margin to center it vertically. For my solution, I decided for the ".nav p" to make the margin 0px and replace that with top and bottom padding. The padding will fill with background color. Now, my navigation height will appear the same with or without the red div border. I did this to the <p> element rather than the <a> element since my <a> element has a different background color on the hover and I don't want to increase the active link space.*/
 .nav li {
