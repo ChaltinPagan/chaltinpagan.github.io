@@ -19,24 +19,33 @@ body {
 	top: 0;
 	width: 100%;
 	background-color: #33cccc;
-	color: #2c3e50;
 }
 
 nav a, nav a:visited {
 	color: #2c3e50;
 }
 
+nav .active {
+	/* text-transform: uppercase; */
+}
+
 main {
 	width: 80vw;
-	margin: 70px auto auto;
+	min-height: 75vh;
+	margin: 70px auto 50px;
+}
+
+h1 {
+	text-align: center;
 }
 
 footer {
 	font-size: 12px;
 	text-align: center;
 }
+
 a, a:visited {
-	color: #2980b9;
+	/* color: #2980b9; */
 }
 
 /*I decided to play with the <a> tag. I experimented with color when a cursor hovers over a link.*/
