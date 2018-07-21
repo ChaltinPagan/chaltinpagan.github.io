@@ -16,6 +16,7 @@ body {
 
 .navbar {
 	position: fixed;
+	z-index: 1;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.25em;
 	top: 0;
@@ -31,12 +32,8 @@ nav a, nav a:visited {
 	color: #2c3e50;
 }
 
-.nav-item.active {
-	color: #ecf0f1 !important;
-}
-
 main {
-	width: 80vw;
+	width: 90vw;
 	min-height: 75vh;
 	margin: 85px auto 45px;
 }
@@ -46,13 +43,43 @@ h1 {
 	text-align: center;
 }
 
+.title {
+	font-style: italic;
+}
+
+figcaption {
+	font-size: 12px;
+}
+
+main a {
+	color: #2980b9;
+	text-decoration: underline;
+}
+
+.bold {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 footer {
 	font-size: 12px;
 	text-align: center;
 }
 
+/* About page */
+#about-accordion button {
+	color: #2980b9;
+}
+
+.recycle, .flea-market {
+	width: 25vw;
+	text-align: center;
+}
+
+/* Stores page */
 .stores {
 	text-align: center;
+	margin-bottom: 1em;
 }
 
 .stores .btn {
@@ -61,12 +88,8 @@ footer {
 }
 
 .stores .btn a {
-	color: #ecf0f1;
+	color: #fff;
 	text-decoration: none;
-}
-
-.stores .btn a:hover {
-	color: #ecf0f1;
 }
 
 /*I use h4 as a heading for different sections within <body>. I wanted space between the last <p> of a section and <h4> of a new section, so I added margin-top to h4.
@@ -77,70 +100,18 @@ h4, form {
 	margin-top: 60px;
 }
 
-.head {
-	text-decoration: none;
+figure {
 	text-align: center;
-	font-weight: bold;
 }
-
-.head div {
-	padding-top: 5px;
-}
-
-/*Originally, I used h1 and h2 for the header of the website and I made their font-size bigger. Cloud9 suggested these should not have a defined font-size and I should use the default setting. Since I wanted the font-size of the header to be larger than what h1 and h2 offered, I changed those to <p> in the HTML and used first-child and nth-child in the CSS. This worked the same. I kept the first-child and nth-child selectors because I wanted to show a better understanding of CSS. 
-Also, I declared the font color in each .head p because I won't get the right result I want if I declare it in .head div.*/
-.head p:first-child {
-	color: #2c3e50;
-	font-size: 50px;
-	margin-top: 30px;
-	margin-bottom: 0;
-}
-
-.head p:nth-child(2) {
-	color: #2c3e50;
-	font-style: italic;
-	font-size: 30px;
-}
-
-/*This is the main navigation.*/
-/* .nav {
-	background-color: #33cccc;
-	text-align: center;
-	font-size: 18px;
-} */
-
-/*I had red "test" borders around my divs when I started coding the website. When I removed the red border, a funny thing happened: The height of my navigation became smaller. When I inspected the .nav div and the <p> element, I saw there was top and bottom margin space of 18px for the div. For some reason, the margin space of the div filled with background color only when I had the border around the div. If I declared a height for my div, then the text would abut with the top of the div and I would have to add padding or margin to center it vertically. For my solution, I decided for the ".nav p" to make the margin 0px and replace that with top and bottom padding. The padding will fill with background color. Now, my navigation height will appear the same with or without the red div border. I did this to the <p> element rather than the <a> element since my <a> element has a different background color on the hover and I don't want to increase the active link space.*/
-.nav li {
-	display: inline;
-	list-style-type: none;
-	margin: auto 30px;
-}
-
-.nav ul {
-	padding-top: 18px;
-	padding-bottom: 18px;
-}
-
-.nav a {
-	text-decoration: none;
-	color: #2c3e50;
-	text-transform: uppercase;
-	background-color: #33cccc;
-}
-
-/*I didn't want my website's content to abut the margins of the "body", so I added some padding.*/
-.text {
-	padding: 30px 20px 100px;
-}
-
 /*Most images will use the same CSS code (under class .img). For certain images, I decided to give them their own class so I could do something different with their layout or size.*/
 .img img {
-	width: 400px;
+	width: 25vw;
+	text-align: center;
 }
 
 /*".book" is on the Resources page.*/
 .img, .book {
-	float: right;
+	/* float: right; */
 	font-size: 12px;
 }
 
