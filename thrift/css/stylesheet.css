@@ -31,8 +31,8 @@ nav a, nav a:visited {
 	color: #2c3e50;
 }
 
-nav .active {
-	/* text-transform: uppercase; */
+.nav-item.active {
+	color: #ecf0f1 !important;
 }
 
 main {
@@ -42,6 +42,7 @@ main {
 }
 
 h1 {
+	text-transform: uppercase;
 	text-align: center;
 }
 
@@ -50,16 +51,21 @@ footer {
 	text-align: center;
 }
 
-a, a:visited {
-	/* color: #2980b9; */
+.stores {
+	text-align: center;
 }
 
-/*I decided to play with the <a> tag. I experimented with color when a cursor hovers over a link.*/
-.nav a:hover {
-	background-color: #ecf0f1;
+.stores .btn {
+	background-color: #2980b9;
+	text-transform: uppercase;
 }
 
-.storenav a:hover {
+.stores .btn a {
+	color: #ecf0f1;
+	text-decoration: none;
+}
+
+.stores .btn a:hover {
 	color: #ecf0f1;
 }
 
@@ -154,60 +160,6 @@ Also, I declared the font color in each .head p because I won't get the right re
 	height: 350px;
 }
 
-/*I added a secondary navigation to my "Stores" page since it's so long. Clicking a button will jump to that section.*/
-.storenav {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.storenav li {
-	list-style-type: none;
-	display: inline;
-	margin: 0 20px;
-}
-
-.storenav a {
-	color: #000000;
-	text-decoration: none;
-	text-transform: uppercase;
-	padding: 7px;
-	background-color: #2980b9;
-	border-radius: 20px;
-}
-
-/*I also decided to add a "Back to Top" button. I found a free-to-use, attribution not required PNG image. In the HTML, I left a comment about the source. Also, I wrote code for an alternate button that employs unicode. I left that code in this CSS as a comment further below.*/
-.back {
-	background-color: #2980b9;
-	height: 75px;
-	width: 75px;
-	position: fixed;
-	bottom: 10px;
-	right: 20px;
-	border-radius: 50%;
-	border: 3px solid #000000;
-}
-
-.back img {
-	height: 50px;
-	margin-left: 12px;
-	margin-top: -2px;
-}
-
-/*This is CSS for an alternate "Back to Top" arrow that uses unicode. Unicode &#9650;
-.back a {
-	text-decoration: none;
-	color: #000000;
-	font-size: 50px;
-}
-
-.back p {
-	margin-top: -7px;
-	color: #000000;
-	font-size: 12px;
-	text-align: center;
-	text-transform: uppercase;
-}*/
-
 /*Unordered list for Tips page.*/
 ul {
 	padding-left: 0px;
@@ -246,11 +198,6 @@ textarea{
 	display: inline-block;
 }
 
-.footer {
-	font-size: 14px;
-	text-align: center;
-	padding-bottom: 5px;
-}
 
 /*This id is for the footer on the "Tips" page. On that page, there is an image that sits close to the footer. I wanted a little more space between the footer and the image, so I added padding-top to the footer on this page.*/
 #spaceabove {
