@@ -18,10 +18,13 @@ body {
 	position: fixed;
 	z-index: 1;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25em;
 	top: 0;
 	width: 100%;
 	background-color: #33cccc;
+}
+
+.navbar .nav-item {
+	font-size: 1.25em;
 }
 
 .navbar-brand {
@@ -47,6 +50,10 @@ h1 {
 	font-style: italic;
 }
 
+figure {
+	text-align: center;
+}
+
 figcaption {
 	font-size: 12px;
 }
@@ -69,6 +76,8 @@ footer {
 /* About page */
 #about-accordion button {
 	color: #2980b9;
+	word-wrap: normal;
+	text-align: left;
 }
 
 .recycle, .flea-market {
@@ -77,17 +86,18 @@ footer {
 }
 
 /* Stores page */
-.stores {
+.stores-buttons {
 	text-align: center;
 	margin-bottom: 1em;
 }
 
-.stores .btn {
+.stores-buttons .btn {
 	background-color: #2980b9;
 	text-transform: uppercase;
+	margin-top: 0.5em;
 }
 
-.stores .btn a {
+.stores-buttons .btn a {
 	color: #fff;
 	text-decoration: none;
 }
@@ -100,9 +110,8 @@ h4, form {
 	margin-top: 60px;
 }
 
-figure {
-	text-align: center;
-}
+
+
 /*Most images will use the same CSS code (under class .img). For certain images, I decided to give them their own class so I could do something different with their layout or size.*/
 .img img {
 	width: 25vw;
@@ -115,16 +124,9 @@ figure {
 	font-size: 12px;
 }
 
-/*".thrift" is on Home page.*/
+/* Image on Home page.*/
 .thrift {
 	text-align: center;
-	font-size: 12px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.thrift img {
-	width: 40%;
 }
 
 .book img {
@@ -177,7 +179,10 @@ textarea{
 
 /*This makes the website mobile-friendly.*/
 @media screen and (max-width: 600px) and (orientation: portrait) {
-	body {
+	#about-accordian .button {
+		width: inherit;
+	}
+	/* body {
 		width: 100%;
 	}
 	.nav li {
@@ -221,7 +226,7 @@ textarea{
 	}
 	#spaceabove {
 		padding-top: 0;
-	}
+	} */
 }
 
 /*Modify "Back to Top" button for tablets.*/
