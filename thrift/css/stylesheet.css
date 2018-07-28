@@ -14,6 +14,46 @@ body {
 	color: #2c3e50;
 }
 
+main {
+	width: 90vw;
+	min-height: 75vh;
+	margin: 85px auto 45px;
+}
+
+main a {
+	color: #2980b9;
+	text-decoration: underline;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.title {
+	font-style: italic;
+}
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+	font-size: 12px;
+}
+
+/* Font of some words will be bold */
+.bold {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+footer {
+	font-size: 12px;
+	text-align: center;
+}
+
+/* Navigation */
 .navbar {
 	position: fixed;
 	z-index: 1;
@@ -35,57 +75,32 @@ nav a, nav a:visited {
 	color: #2c3e50;
 }
 
-main {
-	width: 90vw;
-	min-height: 75vh;
-	margin: 85px auto 45px;
-}
-
-h1 {
-	text-transform: uppercase;
-	text-align: center;
-}
-
-.title {
-	font-style: italic;
-}
-
-figure {
-	text-align: center;
-}
-
-figcaption {
-	font-size: 12px;
-}
-
-main a {
-	color: #2980b9;
-	text-decoration: underline;
-}
-
-.bold {
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-footer {
-	font-size: 12px;
-	text-align: center;
-}
-
 /* About page */
-#about-accordion button {
+#about-accordion .card-link {
 	color: #2980b9;
 	word-wrap: normal;
 	text-align: left;
 }
 
+#about-accordion .card-link:hover {
+	text-decoration: underline;
+}
+
+/* Images on About page */
 .recycle, .flea-market {
 	width: 25vw;
 	text-align: center;
 }
 
 /* Stores page */
+.stores #instructions {
+	text-align: center;
+}
+.stores section {
+	border: 1px solid #2980b9;
+	border-radius: 5px;
+	padding: 1em;
+}
 .stores-buttons {
 	text-align: center;
 	margin-bottom: 1em;
@@ -93,13 +108,10 @@ footer {
 
 .stores-buttons .btn {
 	background-color: #2980b9;
-	text-transform: uppercase;
-	margin-top: 0.5em;
-}
-
-.stores-buttons .btn a {
 	color: #fff;
 	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 0.25em;
 }
 
 /*I use h4 as a heading for different sections within <body>. I wanted space between the last <p> of a section and <h4> of a new section, so I added margin-top to h4.
