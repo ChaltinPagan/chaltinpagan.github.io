@@ -42,7 +42,7 @@ figcaption {
 	font-size: 12px;
 }
 
-/* Font of some words will be bold */
+/* Font of some words will be bold and underlined */
 .bold {
 	font-weight: bold;
 	text-decoration: underline;
@@ -95,11 +95,6 @@ nav a, nav a:visited {
 /* Stores page */
 .stores #instructions {
 	text-align: center;
-}
-.stores section {
-	border: 1px solid #2980b9;
-	border-radius: 5px;
-	padding: 1em;
 }
 .stores .btn-outline-info {
 	text-decoration: none;
