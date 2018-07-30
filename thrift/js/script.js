@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Animation for Stores page
 
-    // Goodwill section will be displayed by default. Hide other sections.
+    // Goodwill section will be displayed. Hide other sections.
     $('#goodwill').siblings('section').hide();
 
     // Goodwill button

@@ -101,17 +101,24 @@ nav a, nav a:visited {
 	border-radius: 5px;
 	padding: 1em;
 }
+.stores .btn-outline-info {
+	text-decoration: none;
+}
 .stores-buttons {
 	text-align: center;
 	margin-bottom: 1em;
 }
-
 .stores-buttons .btn {
 	background-color: #2980b9;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 	margin-top: 0.25em;
+}
+.stores-buttons .btn:hover {
+	background-color: #fff;
+	color: #2980b9;
+	border: 1px solid #2980b9;
 }
 
 /*I use h4 as a heading for different sections within <body>. I wanted space between the last <p> of a section and <h4> of a new section, so I added margin-top to h4.
