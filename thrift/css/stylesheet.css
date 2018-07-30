@@ -65,6 +65,7 @@ footer {
 
 .navbar .nav-item {
 	font-size: 1.25em;
+	margin: auto 1em;
 }
 
 .navbar-brand {
@@ -115,47 +116,24 @@ nav a, nav a:visited {
 	color: #2980b9;
 	border: 1px solid #2980b9;
 }
+#salvation-army br {
+	display: none;
+}
+
+/* Tips page */
+.tips li {
+	margin-bottom: 1em;
+}
 
 /*I use h4 as a heading for different sections within <body>. I wanted space between the last <p> of a section and <h4> of a new section, so I added margin-top to h4.
 On my Contact page, I wanted some space between <h1> and <form> since all my other pages have a space between <h1> and the following tag, which is usually <h4>. I want all my pages to be uniform in their layout. I decided to add <form> to the code I wrote for <h4>. I like how this changes the font color and font-size of the form, too.*/
-h4, form {
+form {
 	color: #2980b9;
 	font-size: 18px;
 	margin-top: 60px;
 }
 
 
-
-/*Most images will use the same CSS code (under class .img). For certain images, I decided to give them their own class so I could do something different with their layout or size.*/
-.img img {
-	width: 25vw;
-	text-align: center;
-}
-
-/*".book" is on the Resources page.*/
-.img, .book {
-	/* float: right; */
-	font-size: 12px;
-}
-
-/* Image on Home page.*/
-.thrift {
-	text-align: center;
-}
-
-.book img {
-	height: 350px;
-}
-
-/*Unordered list for Tips page.*/
-ul {
-	padding-left: 0px;
-}
-
-li {
-	margin-left: 40px;
-	margin-right: 40px;
-}
 
 /*Form for Contact page.*/
 fieldset {
@@ -191,119 +169,11 @@ textarea{
 	padding-top: 100px;
 }
 
-/*This makes the website mobile-friendly.*/
-@media screen and (max-width: 600px) and (orientation: portrait) {
-	#about-accordian .button {
-		width: inherit;
+@media only screen and (max-width: 600px) {
+	.recycle {
+		width: 50vw;
 	}
-	/* body {
-		width: 100%;
-	}
-	.nav li {
-		display: block;
-	}
-	.back {
-		display: none;
-	}
-	.head p:first-child {
-		color: #2c3e50;
-		font-size: 30px;
-		margin-top: 30px;
-		margin-bottom: 0;
-	}
-	.head p:nth-child(2) {
-		color: #2c3e50;
-		font-style: italic;
-		font-size: 20px;
-	}
-	.storenav {
-		margin: 0;
-	}
-	.storenav li {
-		display: block;
-		margin: 0 0 30px 0;
-	}
-	.img {
-		margin-bottom: 20px;
-	}
-	.img img, .thrift img {
-		width: 70vw;
-		float: none;
-		margin: 0 auto;
-	}
-	.book img {
-		height: 300px;
-		float: none;
-	}
-	.footer {
-		border-top: 1px solid #2c3e50;
-	}
-	#spaceabove {
-		padding-top: 0;
-	} */
-}
-
-/*Modify "Back to Top" button for tablets.*/
-/* @media screen and (max-height: 1025px) and (orientation: portrait) {
-	.back {
-		display: none;
-} */
-
-/* This makes the website tablet-friendly. */
-@media screen and (min-width: 600px) and (max-width: 1050px) and (orientation: portrait) {
-	body {
-		width: 100%;
-	}
-	.nav li {
-		margin: auto 10px;
-	}
-	.back {
-		display: none;
-	}
-	.recycle img {
-		width: 30vw;
-	}
-	.img{
-		width: 75vw;
-		float: none;
-	}
-	.storenav li {
-		display: inline;
-		margin: 0 20px;
-	}
-	.footer {
-		border-top: 1px solid #2c3e50;
-	}
-	#spaceabove {
-		padding-top: 0;
+	#salvation-army br {
+		display: initial;
 	}
 }
-
-/*This makes the website tablet-friendly.*/
-/* @media screen and (max-height: 1024px) {
-	body {
-		width: 100%;
-	}
-	.nav li {
-		margin: auto 10px;
-	}
-	.back {
-		display: none;
-	}
-	.img img {
-		width: 80vw;
-	}
-	.recycle img {
-		width: 30vw;
-	}
-	.storenav li {
-		display: inline;
-		margin: 0 20px;
-	}
-	.footer {
-		border-top: 1px solid #2c3e50;
-	}
-	#spaceabove {
-		padding-top: 0;
-	}
-} */
