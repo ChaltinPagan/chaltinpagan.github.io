@@ -125,6 +125,24 @@ nav a, nav a:visited {
 	margin-bottom: 1em;
 }
 
+/* Resources page */
+.resources .card-header {
+	text-align: center;
+}
+
+.resources .card-text {
+	display: none;
+}
+
+.resources .btn {
+	margin: 1em;
+}
+
+.coolirpa a {
+	text-decoration: none;
+	text-align: center;
+}
+
 /*I use h4 as a heading for different sections within <body>. I wanted space between the last <p> of a section and <h4> of a new section, so I added margin-top to h4.
 On my Contact page, I wanted some space between <h1> and <form> since all my other pages have a space between <h1> and the following tag, which is usually <h4>. I want all my pages to be uniform in their layout. I decided to add <form> to the code I wrote for <h4>. I like how this changes the font color and font-size of the form, too.*/
 form {
