@@ -36,13 +36,7 @@ $(document).ready(function() {
     });
 
     // Resources page
-    // Kondo book info button
-    $('#kondo-button').click(function() {
-        $(this).next().toggle(1000);
-    })
-
-    // Coolirpa info button
-    $('#coolirpa-button').click(function() {
-        $(this).next().toggle(1000);
+    $(".more-info-button").click( event => {
+        $(event.currenttarget).next().toggle('slow');
     })
 });
