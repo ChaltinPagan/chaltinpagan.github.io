@@ -195,6 +195,11 @@ nav a, nav a:visited {
 .quiz .alert, .source {
 	/* visibility: hidden; */
 	display: none;
+	width: 25%;
+}
+
+.quiz #quiz-submit {
+	color: #fff;
 }
 
 /* For smartphones */
@@ -210,6 +215,9 @@ nav a, nav a:visited {
 	}
 	.contact .card {
 		width: 100%;
+	}
+	.quiz .alert {
+		width: initial;
 	}
 }
 
