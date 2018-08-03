@@ -61,6 +61,19 @@ footer {
 	text-align: center;
 }
 
+/* Home page */
+.take-quiz {
+	background-color: #fff;
+	color: #2980b9;
+	border: 2px solid #2980b9;
+	text-decoration: none;
+}
+
+.take-quiz:hover {
+	background-color: #2980b9;
+	color: #fff;
+}
+
 /* Navigation */
 .navbar {
 	position: fixed;
