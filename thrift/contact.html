@@ -48,31 +48,40 @@
 		<!-- End of Navigation -->
 
 		<!--Beginning of Main Content-->
-		<main>
+		<main class="contact">
 			<h1>Contact</h1>
 
-			<form>
-				<fieldset>
-					<legend>Send me a message!</legend>
-					<!--I prefer the input box to sit below the label, instead of next to it. So, I added </br> before <input type>.-->
-					<p><label>Name:</label></br><input type="text"></p>
-					<p><label>Email:</label></br><input type="text"></p>
-					<p><label>Subject:</label></br><input type="text"></p>
-					<p><label>Message:</label></br><textarea></textarea></p>
-					
-					<!--Beginning of "Send" button-->
-					<p class="send"><a href="#">Send</a></p>
-					<!--End of "Send" button-->
-				</fieldset>
+			<!-- Beginning of form -->
+			<form class="card">
+				<h5>Send me a message!</h5>
+				<div class="card-body">
+					<div class="form-group row">
+						<label for="name" class="col-lg-2 col-sm-12">Name</label><br />
+						<input type="text" id="name" class="col-lg-10 col-sm-12">
+					</div>
+					<div class="form-group row">
+						<label for="email" class="col-lg-2 col-sm-12">Email</label><br />
+						<input type="email" id="email" class="col-lg-10 col-sm-12">
+					</div>
+					<div class="form-group row">
+						<label for="subject" class="col-lg-2 col-sm-12">Subject</label><br />
+						<input type="text" id="subject" class="col-lg-10 col-sm-12">
+					</div>
+					<div class="form-group row">
+						<label for="message" class="col-lg-2 col-sm-12">Message</label><br />
+						<textarea id="message" class="col-lg-10 col-sm-12" rows="10" class="form-control"></textarea>
+					</div>
+					<button class="btn" type="submit">Send</button>
+				</div>
 			</form>
+			<!-- End of form -->
 
 		</main>
 		<!--End of Main Content-->
 
-
-		<div class="footer">
-			<p>Copyright 2017. Coded by Chaltin Pagan. </br>Created to fulfill the requirements of <em>Project_&#60;code&#62;</em> Phase I, a Tech Connect program at the New York Public Library, NYC.</p>
-		</div>
+		<footer>
+			<p>Copyright 2017-2018. Coded by Chaltin Pagan. </br>Created at <span class="title">Project_&#60;code&#62;</span>, a Tech Connect program at the New York Public Library, NYC.</p>
+		</footer>
 
 		<!-- JQuery Google CDN -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -80,5 +89,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<!-- Bootstrap CDN -->
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<!-- My Script -->
+		<script src="js/script.js"></script>
 	</body>
 </html>

@@ -143,14 +143,39 @@ nav a, nav a:visited {
 	text-align: center;
 }
 
-/*I use h4 as a heading for different sections within <body>. I wanted space between the last <p> of a section and <h4> of a new section, so I added margin-top to h4.
-On my Contact page, I wanted some space between <h1> and <form> since all my other pages have a space between <h1> and the following tag, which is usually <h4>. I want all my pages to be uniform in their layout. I decided to add <form> to the code I wrote for <h4>. I like how this changes the font color and font-size of the form, too.*/
-form {
+/* Contat page */
+.contact form {
 	color: #2980b9;
-	font-size: 18px;
-	margin-top: 60px;
+	text-align: center;
+	margin: auto;
 }
 
+.contact .card {
+	width: 50%;
+}
+
+.contact h5 {
+	margin: 1em;
+}
+
+.contact .form-group label {
+	text-align: right;
+}
+
+.contact input, textarea {
+	width: 90%;
+}
+
+.contact button {
+	color: #2980b9;
+	border: 2px solid #2980b9;
+	border-radius: 5px;
+}
+
+.contact button:hover {
+	background-color: #2980b9;
+	color: #fff;
+}
 
 
 /*Form for Contact page.*/
@@ -158,15 +183,15 @@ fieldset {
 	padding-left: 40px;
 }
 
-input {
+/* input {
 	height: 20px;
 	width: 70%;
-}
+} */
 
-textarea{
+/* textarea{
 	height: 200px;
 	width: 70%;
-}
+} */
 
 /*"Send" button for Contact page. While the Send button uses CSS that is similar to the buttons created with the .storenav CSS, I felt was best to create separate CSS for the "Send" button. I wanted the "Send" button to look a little different from the .storenav buttons. I thought separate CSS would be less confusing for the web browser.*/
 .send a {
@@ -187,11 +212,25 @@ textarea{
 	padding-top: 100px;
 }
 
+/* For smartphones */
 @media only screen and (max-width: 600px) {
 	.recycle {
 		width: 50vw;
 	}
 	#salvation-army br {
 		display: initial;
+	}
+	.contact .form-group label {
+		text-align: left;
+	}
+	.contact .card {
+		width: 100%;
+	}
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) {
+	.contact .form-group label {
+		text-align: left;
 	}
 }
