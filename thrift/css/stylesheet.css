@@ -177,39 +177,20 @@ nav a, nav a:visited {
 	color: #fff;
 }
 
-
-/*Form for Contact page.*/
-fieldset {
-	padding-left: 40px;
-}
-
-/* input {
-	height: 20px;
-	width: 70%;
-} */
-
-/* textarea{
-	height: 200px;
-	width: 70%;
-} */
-
-/*"Send" button for Contact page. While the Send button uses CSS that is similar to the buttons created with the .storenav CSS, I felt was best to create separate CSS for the "Send" button. I wanted the "Send" button to look a little different from the .storenav buttons. I thought separate CSS would be less confusing for the web browser.*/
-.send a {
-	text-decoration: none;
-	text-transform: uppercase;
-	background-color: #2980b9;
-	padding: 10px;
-	border-radius: 20px;
-	width: 100px;
+/* Quiz page */
+.quiz #prompt {
 	text-align: center;
-	color: #ecf0f1;
-	display: inline-block;
+	color: #2980b9;
+	margin: 1em;
 }
 
+.quiz li, .form-check, .alert, .source {
+	margin-top: 1em;
+}
 
-/*This id is for the footer on the "Tips" page. On that page, there is an image that sits close to the footer. I wanted a little more space between the footer and the image, so I added padding-top to the footer on this page.*/
-#spaceabove {
-	padding-top: 100px;
+.quiz .alert, .source {
+	/* visibility: hidden; */
+	display: none;
 }
 
 /* For smartphones */

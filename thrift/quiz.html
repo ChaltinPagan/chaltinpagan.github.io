@@ -48,8 +48,72 @@
         <!-- End of Navigation -->
         
         <main class="quiz">
-            <form action="">
-                <div class="form-group"><label for=""></label><input type="text"></div>
+			<h1>Quiz</h1>
+			<h5 id="prompt">Will you start thrifting after this quiz?</h5>
+            <form class="card">
+				<div class="card-body">
+					<ol>
+						<fieldset class="form-group">
+							<!-- Question 1 -->
+							<li>How many pounds of clothing will the average American throw away each year?</li>
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="qq-one" id="qa-one" value="option1">
+								<label for="qa-one" class="form-check-label">81 pounds</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="qq-one" id="qa-two" value="option2">
+								<label for="qa-two" class="form-check-label">2 pounds</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="qq-one" id="qa-three" value="option3">
+								<label for="qa-three" class="form-check-label">7 pounds</label>
+							</div>
+							<div class="alert alert-success w-25" id="alert-one">Correct</div>
+							<div class="alert alert-warning w-25" id="alert-two">Try Again</div>
+							<br />
+							<a class="source" id="source-one" href="https://www.huffingtonpost.com/entry/youre-likely-going-to-throw-away-81-pounds-of-clothing-this-year_us_57572bc8e4b08f74f6c069d3" target="_blank">Source</a>
+
+							<!-- Question 2 -->
+							<li>What percentage of the world uses secondhand clothing?</li>
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="qq-two" id="qa-one" value="option1">
+								<label for="qa-one" class="form-check-label">50%</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="qq-two" id="qa-two" value="option2">
+								<label for="qa-two" class="form-check-label">70%</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="qq-two" id="qa-three" value="option3">
+								<label for="qa-three" class="form-check-label">99%</label>
+							</div>
+							<div class="alert alert-success w-25">Correct!</div>
+							<div class="alert alert-warning w-25">Try Again</div>
+							<br />
+							<a class="source" href="https://www.thebalancesmb.com/textile-recycling-facts-and-figures-2878122" target="_blank">Source</a>
+
+							<!-- Question 3 -->
+							<li>How much water is used to make one T-shirt?</li>
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="qq-three" id="qa-one" value="option1">
+								<label for="qa-one" class="form-check-label">10 liters</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="qq-three" id="qa-two" value="option2">
+								<label for="qa-two" class="form-check-label">150 liters</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="qq-three" id="qa-three" value="option3">
+								<label for="qa-three" class="form-check-label">2,700 liters</label>
+							</div>
+							<div class="alert alert-success w-25">Correct!</div>
+							<div class="alert alert-warning w-25">Try Again</div>
+							<br />
+							<a class="source" href="https://www.worldwildlife.org/stories/the-impact-of-a-cotton-t-shirt" target="_blank">Source</a>
+						</fieldset>
+					</ol>
+					<a class="btn btn-info" id="quiz-submit">Submit</a>
+				</div>
             </form>
         </main>
 

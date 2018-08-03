@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Animation for Stores page
-    // Goodwill section will be displayed. Hide other sections.
+    // Goodwill section will be visibilityed. Hide other sections.
     $('#goodwill').siblings('section').hide();
 
     // Goodwill button
@@ -40,3 +40,40 @@ $(document).ready(function() {
         $(event.currentTarget).next().toggle('slow');
     })
 });
+
+// For Quiz page
+let quiz = document.getElementsByClassName('quiz');
+let q1 = document.getElementsByName('qq-one');
+let q2 = document.getElementsByName('qq-two');
+let q3 = document.getElementsByName('qq-three');
+let alertSuccess = document.getElementsByClassName('alert-success');
+let alertWarning = document.getElementsByClassName('alert-warning');
+let sources = document.getElementsByClassName('source');
+let quizBtn = document.getElementById('quiz-submit');
+let quizAnswers = [q1[0], q2[1], q3[2]];
+
+function isChecked() {
+    for (var i = 0; i < quizAnswers.length; i++) {
+        // If correct answer chosen
+        if (quizAnswers[i].checked) {
+            // Dispaly success alert
+            alertSuccess[i].style.display = 'inline-block';
+            // Hide warning alert
+            alertWarning[i].style.display = 'none';
+            // Display link to source
+            sources[i].style.display = 'initial';
+        } else {
+            // If wrong answer chosen
+            // Hide success alert
+            alertSuccess[i].style.display = 'none';
+            // Display warning alert
+            alertWarning[i].style.display = 'inline-block';
+            // Hide link to source
+            sources[i].style.display = 'none';
+        }
+    }
+}
+
+quizBtn.addEventListener('click', () => {
+    isChecked();
+})
