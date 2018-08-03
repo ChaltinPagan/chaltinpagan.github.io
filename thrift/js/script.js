@@ -36,7 +36,7 @@ $(document).ready(function() {
     });
 
     // Resources page
-    $(".more-info-button").click( event => {
+    $(".resources-info-button").click( event => {
         $(event.currentTarget).next().toggle('slow');
     })
 });

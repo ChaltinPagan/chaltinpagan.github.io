@@ -143,6 +143,10 @@ nav a, nav a:visited {
 	text-align: center;
 }
 
+.coolirpa br {
+	display: none;
+}
+
 /* Contat page */
 .contact form {
 	color: #2980b9;
@@ -198,7 +202,7 @@ nav a, nav a:visited {
 	.recycle {
 		width: 50vw;
 	}
-	#salvation-army br {
+	#salvation-army br, .coolirpa br {
 		display: initial;
 	}
 	.contact .form-group label {
