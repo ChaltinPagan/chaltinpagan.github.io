@@ -1,10 +1,46 @@
-$(document).ready(function() {
+// jsSocials
+$("#shareIcons").jsSocials({
+    showLabel: false,
+    shares: [
+        {
+            share: 'email',
+            logo: "far fa-envelope"
+        },
+        {
+            share: 'twitter',
+            logo: "fab fa-twitter"
+        },
+        {
+            share: 'facebook',
+            logo: "fab fa-facebook-f"
+        },
+        {
+            share: 'googleplus',
+            logo: "fab fa-google-plus-g"
+        },
+        {
+            share: 'linkedin',
+            logo: "fab fa-linkedin-in"
+        },
+        {
+            share: 'pinterest',
+            logo: "fab fa-pinterest-p"
+        },
+        {
+            share: 'whatsapp',
+            logo: "fab fa-whatsapp"
+        }
+    ]
+});
+
+// My JQuery
+$(document).ready(function () {
     // Animation for Stores page
     // Goodwill section will be visibilityed. Hide other sections.
     $('#goodwill').siblings('section').hide();
 
     // Goodwill button
-    $('#goodwill-button').click(function() {
+    $('#goodwill-button').click(function () {
         // $('#housing-works').hide();
         // $('#salvation-army').hide();
         $('#goodwill').animate({
@@ -16,7 +52,7 @@ $(document).ready(function() {
     });
 
     // Housing Works button
-    $('#housing-works-button').click(function() {
+    $('#housing-works-button').click(function () {
         $('#housing-works').animate({
             height: 'toggle'
         }, 'slow');
@@ -26,7 +62,7 @@ $(document).ready(function() {
     });
 
     // Salvation Army button
-    $('#salvation-army-button').click(function() {
+    $('#salvation-army-button').click(function () {
         $('#salvation-army').animate({
             height: 'toggle'
         }, 'slow');
@@ -36,7 +72,7 @@ $(document).ready(function() {
     });
 
     // Resources page
-    $(".resources-info-button").click( event => {
+    $(".resources-info-button").click(event => {
         $(event.currentTarget).next().toggle('slow');
     })
 });

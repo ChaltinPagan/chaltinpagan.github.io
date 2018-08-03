@@ -16,7 +16,7 @@ body {
 
 main {
 	width: 90vw;
-	min-height: 75vh;
+	min-height: 70vh;
 	margin: 85px auto 45px;
 }
 
@@ -40,6 +40,14 @@ figure {
 
 figcaption {
 	font-size: 12px;
+}
+
+#shareIcons {
+	font-family: 'Font Awesome';
+} 
+
+.fb {
+	content: 'f39e';
 }
 
 /* Font of some words will be bold and underlined */
