@@ -224,6 +224,13 @@ nav a, nav a:visited {
 }
 
 .quiz #quiz-submit {
+	background-color: #fff;
+	color: #33cccc;
+	border: 1px solid #33cccc;
+}
+
+.quiz #quiz-submit:hover {
+	background-color: #33cccc;
 	color: #fff;
 }
 
